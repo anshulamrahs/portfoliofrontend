@@ -1,0 +1,25 @@
+.project {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    width: 100%;
+    background-color: black;
+    color: #f4f5f6;
+    justify-content: space-between;
+
+    h1 {
+        //margin-left: 0px;
+        font-size: 40px;
+        //margin-top: 0px;
+        margin: auto;
+        //padding: 20px;
+    }
+    .left {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 30px;
+        padding: 0px;
+    }
+    
+}

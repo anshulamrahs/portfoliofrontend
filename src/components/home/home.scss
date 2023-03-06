@@ -1,0 +1,115 @@
+
+.container {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    left: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    flex-direction: row;
+    z-index: 99;
+    
+    scroll-behavior: smooth;
+    
+    .container::-webkit-scrollbar {
+        overflow: hidden;
+    }
+    
+    .left{
+         display: flex;
+         flex-direction: column;
+         height: 100vh;
+         width: 60%;
+
+         .text {
+            display: flex;
+            color: #f4f5f6;
+            font-family: 'Roboto', sans-serif;
+            font-size: 35px;
+            margin: 30px 0 0 50px;
+            width: 65%;
+         }
+        .ico {
+            color: #f4f5f6;
+            background-color: #ff7f02;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-left: 5px;
+           // margin: 30px;
+        }
+        .orangename {
+            color: #ff7f02;
+            font-family: 'Roboto', sans-serif;
+            font-size: 70px;
+            margin: 250px 0 0 50px;
+            
+        }
+    
+        .high {
+            
+            color: #f4f5f6;
+            font-family: 'Roboto', sans-serif;
+            font-size: 50px;
+            margin: 10px 0 0 50px;
+            
+        }
+    
+        .para {
+            width: 600px;
+            color: #f4f5f6;
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+            margin: 55px 0 0 50px;
+            
+        }
+    }
+    .but {
+        display: flex;
+        
+        
+        
+        a.talk {
+            display: flex;
+            width: 150px;
+            height: 40px;
+            margin: 80px 0px 0px 50px;
+            //padding: 20px;
+            border-radius: 10px;
+            background-color: #ff7f02;
+            border: 1px solid #050505;
+            color: #000000;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            font-size: 18px;
+         
+        }
+        a.talks {          
+            margin: 80px 0px 0px 10px;
+         
+        }
+    }
+    .right {
+        display: flex;
+        //flex-direction: column;
+        height: 100vh;
+        background-color: #000000;
+        width: 30%;
+
+        img {
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            margin-top: 250px;
+            margin-left: 250px;
+            border-radius: 50%;
+        }
+        
+    }
+    
+
+}
