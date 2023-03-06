@@ -1,8 +1,10 @@
 .navbar {
     display: flex;
-    background-color: black;
+    //background: rgb(2,0,36);
+   // background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 35%, rgb(42, 42, 42) 100%);
     color: rgb(255, 255, 255);
-    width: 100%;
+    width: 100vw;
+    //background-image: linear-gradient(rgb(0, 0, 0), rgb(60, 60, 60), rgb(0, 0, 0));
     height: 70px;
     justify-content: space-between;
     align-items: center;

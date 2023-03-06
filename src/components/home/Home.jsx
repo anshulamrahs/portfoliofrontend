@@ -2,9 +2,10 @@
 import "./home.scss"
 import NorthEastIcon from '@mui/icons-material/NorthEast';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls,Sphere, MeshDistortMaterial } from '@react-three/drei';
+import { OrbitControls,Sphere, MeshDistortMaterial, } from '@react-three/drei';
 import Typewriter from 'typewriter-effect';
 import CV from '../assets/cv.pdf'
+
 
 //import Desk from '../assets/crp.jpeg'
 
@@ -15,7 +16,7 @@ const Home = () => {
   return (
     <div className='container'>
       <div className="left">
-      <span className='orangename'>Hi, I'm Anshul,<NorthEastIcon className='ico'/></span>
+      <span className='orangename'>Hello!, I'm Anshul. A Front-end Developer Based In India<NorthEastIcon className='ico'/></span>
       <div className="text">
         <Typewriter
         options={{autoStart: true, loop: true,
@@ -39,10 +40,10 @@ const Home = () => {
         <Canvas>
           <OrbitControls enableZoom={false} autoRotate={true}/>
           <ambientLight intensity={1}/>
-          <directionalLight position={[3,2,1]}/>
+          <directionalLight position={[4,3,2]}/>
           <Sphere args={[1,100,200]} scale={1.6}>
             <MeshDistortMaterial
-            color= "#562194"
+            color= "black"
             attach="material"
             distort={0.5}
             speed={2}

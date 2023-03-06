@@ -3,31 +3,64 @@
     background-color: black;
     height: 100vh;
     color: aliceblue;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url('../assets/mono.jpg');
 
-    h1 {
+    .left {
+        display: flex;
+       // flex-direction: column;
+        font-size: 12px;
+        background-color: gray ;
+        width: 500px;
+        height: 500px;
+       // flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        padding: 10px;
+        margin: 10px 0 0 150px;
+        border-radius: 20px;
+        .icons {
+           display: flex;
+           flex-direction: column;
+           flex-wrap: wrap;
+           height: 400px;
+           width: 400px;
+           padding: 10px;
+           margin: 5px 5px;
+           
+
+           article {
+            display: flex;
+           flex-direction: column;
+
+           h2 {
+            font-size: 28px;
+           }
+           
+           span {
+            font-size: 15px;
+            margin-bottom: 10px;
+            margin-top: 0px;
+           }
+           }
+        }
 
     }
-    .skil-left {
+
+    .right {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 50%;
-        border: 1px solid white;
-        height: 400px;
+       // flex-direction: column;
+        font-size: 12px;
+       // background-color: gray ;
         width: 500px;
-        margin: 70px 120px;
-        
-        label {
-            justify-content: flex-start;
-            font-size: 40px;
-            //margin: 10px 30px;
-        }
-        progress {
-            height: 30px;
-            width: 400px;
-            margin: 10px 20px;
-        }
+        height: 500px;
+       // flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        //padding: 10px;
+        margin: 10px 0 0 150px;
+        //border-radius: 20px;
     }
+    
 }

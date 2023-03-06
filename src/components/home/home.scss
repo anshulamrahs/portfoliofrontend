@@ -8,13 +8,14 @@
     height: 100%;
     overflow: hidden;
     flex-direction: row;
-    z-index: 99;
-    
+    z-index: 990;
+    background-image: url('../assets/mono.jpg');
+    background-repeat: repeat;
     scroll-behavior: smooth;
+    //opacity: 0.9;
+    //background-image: linear-gradient(0,0,black,black);
     
-    .container::-webkit-scrollbar {
-        overflow: hidden;
-    }
+    
     
     .left{
          display: flex;
@@ -24,15 +25,15 @@
 
          .text {
             display: flex;
-            color: #f4f5f6;
+            color: #f88a1b;
             font-family: 'Roboto', sans-serif;
-            font-size: 35px;
+            font-size: 40px;
             margin: 30px 0 0 50px;
             width: 65%;
          }
         .ico {
             color: #f4f5f6;
-            background-color: #ff7f02;
+            background-color: #f88a1b;
             border-radius: 50%;
             width: 40px;
             height: 40px;
@@ -40,9 +41,9 @@
            // margin: 30px;
         }
         .orangename {
-            color: #ff7f02;
+            color: #f9f7f6;
             font-family: 'Roboto', sans-serif;
-            font-size: 70px;
+            font-size: 50px;
             margin: 250px 0 0 50px;
             
         }
@@ -77,7 +78,7 @@
             margin: 80px 0px 0px 50px;
             //padding: 20px;
             border-radius: 10px;
-            background-color: #ff7f02;
+            background-color: #f88a1b;
             border: 1px solid #050505;
             color: #000000;
             justify-content: center;
@@ -95,8 +96,12 @@
         display: flex;
         //flex-direction: column;
         height: 100vh;
-        background-color: #000000;
+        position: relative;
+       // background-color: #000000;
         width: 30%;
+       // z-index: 998;
+       // background-image: url('../assets/mono.jpg');
+
 
         img {
             width: 250px;

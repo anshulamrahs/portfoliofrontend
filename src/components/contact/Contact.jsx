@@ -91,7 +91,7 @@ const Contact = () => {
             <span>Anshul Sharma</span>
         </div>
         </div>
-      </div>
+      </div> 
       <div className="right">
         <h1>Get in Touch today</h1>
       <form onSubmit={handleSubmit}>

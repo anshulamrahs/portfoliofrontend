@@ -2,7 +2,9 @@ import React from 'react'
 import "./card.scss";
 import Web from '../assets/web.jpeg'
 
+
 const Card = () => {
+  
   return (
     <div className='card'>
     <img className='img' src={Web} alt='' />
