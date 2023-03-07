@@ -33,7 +33,9 @@
            article {
             display: flex;
            flex-direction: column;
-
+           .icon {
+            color: #ff7f02;
+           }
            h2 {
             font-size: 28px;
            }

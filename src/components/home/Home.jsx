@@ -16,13 +16,13 @@ const Home = () => {
   return (
     <div className='container'>
       <div className="left">
-      <span className='orangename'>Hello!, I'm Anshul. A Front-end Developer Based In India<NorthEastIcon className='ico'/></span>
+      <span className='orangename'>Hello!, I'm Anshul. A Full-stack Developer Based In India<NorthEastIcon className='ico'/></span>
       <div className="text">
         <Typewriter
         options={{autoStart: true, loop: true,
         delay: 40,
         strings:[
-          "I'm a Front-end Developer",
+          "I'm a Full-Stack Developer",
           " A Tech Enthusiast",
           
         ]

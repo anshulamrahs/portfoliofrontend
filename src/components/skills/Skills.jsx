@@ -11,32 +11,32 @@ const Skills = () => {
         <div className="icons">
           <article>
         <VerifiedIcon className='icon'/>
-        <h2>HTML</h2>
+        <h2>HTML5</h2>
         <span>Expert</span>
           </article>
           <article>
         <VerifiedIcon className='icon'/>
-        <h2>HTML</h2>
+        <h2>CSS3</h2>
         <span>Expert</span>
           </article>
           <article>
         <VerifiedIcon className='icon'/>
-        <h2>HTML</h2>
+        <h2>React Js</h2>
         </article>
-        <small>Expert</small>
+        <span>Expert</span>
           <article>
         <VerifiedIcon className='icon'/>
-        <h2>HTML</h2>
+        <h2>Javascript</h2>
+        <span>Intermediate</span>
+          </article>
+          <article>
+        <VerifiedIcon className='icon'/>
+        <h2>SCSS</h2>
         <span>Expert</span>
           </article>
           <article>
         <VerifiedIcon className='icon'/>
-        <h2>HTML</h2>
-        <span>Expert</span>
-          </article>
-          <article>
-        <VerifiedIcon className='icon'/>
-        <h2>HTML</h2>
+        <h2>Github</h2>
         <span>Expert</span>
           </article>
         </div>
