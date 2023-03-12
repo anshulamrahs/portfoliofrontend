@@ -1,7 +1,7 @@
 
 .container {
     display: flex;
-    background-color: black;
+    background-color: #2C3333;
     width: 100%;
     left: 0;
     padding: 0;
@@ -41,7 +41,7 @@
            // margin: 30px;
         }
         .orangename {
-            color: #f9f7f6;
+            color: #CBE4DE;
             font-family: 'Roboto', sans-serif;
             font-size: 50px;
             margin: 250px 0 0 50px;
@@ -59,7 +59,7 @@
     
         .para {
             width: 600px;
-            color: #f4f5f6;
+            color: #CBE4DE;
             font-size: 20px;
             font-family: 'Roboto', sans-serif;
             margin: 55px 0 0 50px;
@@ -80,7 +80,7 @@
             border-radius: 10px;
             background-color: #f88a1b;
             border: 1px solid #050505;
-            color: #000000;
+            color: white;
             justify-content: center;
             align-items: center;
             text-decoration: none;
