@@ -1,32 +1,23 @@
 import React from 'react'
 import './project.scss'
-import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
-import CodeIcon from '@mui/icons-material/Code';
-import AnimationIcon from '@mui/icons-material/Animation';
 
+import Anshul from '../assets/ansu.jpeg'
+import Male from '../assets/male.png'
+import Tex from '../assets/texts.png'
 const Project = () => {
   return (
     <div className='projects'>
-      <div className="desc">
-        <h1 className='title'>Services That we Provide</h1>
-        <span className='des'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid iusto nemo cumque delectus ea hic minima, voluptates velit voluptatem doloribus odit corporis exercitationem similique? Deserunt magni natus eligendi suscipit quos!</span>
+      <div className="left">
+        <img className='person' src={Anshul} alt="" />
+        <img className='persons' src={Male} alt="" />
+        <span className='perX'>
+          <img src={Tex} className='per' alt=''/>
+        </span>
       </div>
-      <div className="points">
-        <div className="pointList">
-        <LibraryBooksIcon/>
-        <h1 className='dd'>Design</h1>
-        <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis architecto non quo deserunt veritatis sapiente dolor beatae aliquam cumque voluptatum necessitatibus nisi magni quaerat voluptatibus maiores repudiandae, ducimus harum ipsam.</small>
-        </div>
-        <div className="pointList">
-        <CodeIcon/>
-        <h1 className='dd'>Development</h1>
-        <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis architecto non quo deserunt veritatis sapiente dolor beatae aliquam cumque voluptatum necessitatibus nisi magni quaerat voluptatibus maiores repudiandae, ducimus harum ipsam.</small>
-        </div>
-        <div className="pointList">
-        <AnimationIcon/>
-        <h1 className='dd'>Marketing</h1>
-        <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis architecto non quo deserunt veritatis sapiente dolor beatae aliquam cumque voluptatum necessitatibus nisi magni quaerat voluptatibus maiores repudiandae, ducimus harum ipsam.</small>
-        </div>
+      <div className="right">
+        <h1>About ME</h1>
+        <h3>A Front-end Developer based in INDIA</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nostrum unde neque modi commodi magni laboriosam cum similique velit architecto tempore iusto, soluta explicabo earum natus repellat, accusantium perspiciatis adipisci porro numquam autem id fuga voluptates. Enim, architecto. Aut, placeat et? Quia perspiciatis incidunt officiis, dolore voluptatum modi cumque totam? A sunt odit quis, atque delectus unde sequi temporibus consectetur.</p>
       </div>
     </div>
   )

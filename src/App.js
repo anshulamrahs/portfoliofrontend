@@ -4,8 +4,8 @@ import Navbar from './components/navbar/Navbar';
 import Home from './components/home/Home';
 import Contact from './components/contact/Contact';
 import Project from './components/project/Project';
-import Skills from './components/skills/Skills';
 import Footer from './components/footer/Footer';
+import Portfolio from './components/portfolio/Portfolio';
 
 
 
@@ -16,7 +16,7 @@ function App() {
       <Navbar/>
       <Home/>
       <Project/>
-      <Skills/>
+      <Portfolio/>
       <Contact/>
       <Footer/>
     </div>

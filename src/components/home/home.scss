@@ -32,12 +32,13 @@
             width: 65%;
          }
         .ico {
-            color: #f4f5f6;
-            background-color: #f88a1b;
+            background-color: #2C3333;
+            //background-color: #f88a1b;
             border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            margin-left: 5px;
+            width: 60px;
+            height: 60px;
+            margin-left: 15px;
+            margin-top: 15px;
            // margin: 30px;
         }
         .orangename {
@@ -46,50 +47,36 @@
             font-size: 50px;
             margin: 250px 0 0 50px;
             
-        }
-    
-        .high {
-            
-            color: #f4f5f6;
-            font-family: 'Roboto', sans-serif;
-            font-size: 50px;
-            margin: 10px 0 0 50px;
-            
-        }
-    
-        .para {
-            width: 600px;
-            color: #CBE4DE;
-            font-size: 20px;
-            font-family: 'Roboto', sans-serif;
-            margin: 55px 0 0 50px;
-            
-        }
-    }
-    .but {
-        display: flex;
-        
-        
-        
-        a.talk {
+        }    
+
+        .skills {
             display: flex;
-            width: 150px;
-            height: 40px;
-            margin: 80px 0px 0px 50px;
-            //padding: 20px;
-            border-radius: 10px;
-            background-color: #f88a1b;
-            border: 1px solid #050505;
-            color: white;
-            justify-content: center;
             align-items: center;
-            text-decoration: none;
-            font-size: 18px;
-         
-        }
-        a.talks {          
-            margin: 80px 0px 0px 10px;
-         
+            justify-content: center;
+            margin: 160px 0px 0px 250px;
+            width: 100%;
+
+            p {
+                font-size: 32px;
+                color: #CBE4DE;
+            }
+
+            .logos {
+                display: flex;
+               
+
+                .ulI {
+                    display: flex;
+                    list-style: none;
+                    gap: 10px;
+                }
+                .lImg {
+                    width: 50px;
+                    height: 50px;
+                    background-color: #f4f5f6;
+                    border-radius: 50px;
+                }
+            }
         }
     }
     .right {

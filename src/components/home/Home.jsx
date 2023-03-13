@@ -1,10 +1,16 @@
 
 import "./home.scss"
-import NorthEastIcon from '@mui/icons-material/NorthEast';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls,Sphere, MeshDistortMaterial, } from '@react-three/drei';
 import Typewriter from 'typewriter-effect';
-import CV from '../assets/cv.pdf'
+import HTML from '../assets/html.svg'
+import CSS from '../assets/css.png'
+import Reac from '../assets/reacts.svg'
+import JS from '../assets/jasd.png'
+import SASS from '../assets/sass.webp'
+import TAIL from '../assets/tail.avif'
+import Hand from '../assets/hand.jpeg'
+//import CV from '../assets/cv.pdf'
 
 
 //import Desk from '../assets/crp.jpeg'
@@ -16,7 +22,7 @@ const Home = () => {
   return (
     <div className='container'>
       <div className="left">
-      <span className='orangename'>Hello!, I'm Anshul. A Full-stack Developer Based In India<NorthEastIcon className='ico'/></span>
+      <span className='orangename'>Hi, I'm Anshul. A Full-Stack Dev Based In India<img className='ico' src={Hand} alt=""/></span>
       <div className="text">
         <Typewriter
         options={{autoStart: true, loop: true,
@@ -28,14 +34,21 @@ const Home = () => {
         ]
         }}
         />
-        
       </div>
-      
-      <span className='para'>-I Help Building Web-design That Work!</span>
-      <div className="but">
-        <a href={CV} className='talk' download >Download CV</a><a href="#contact"  className='talk talks'>Let's talk</a>
+      <div className="skills">
+        <p>Tech Stack  |</p>
+        <div className="logos">
+          <ul className="ulI">
+            <li><img className="lImg" src={HTML} alt="" /></li>
+            <li><img className="lImg" src={CSS} alt="" /></li>
+            <li><img className="lImg" src={Reac} alt="" /></li>
+            <li><img className="lImg" src={JS} alt="" /></li>
+            <li><img className="lImg" src={SASS} alt="" /></li>
+            <li><img className="lImg" src={TAIL} alt="" /></li>
+          </ul>
         </div>
       </div>
+     </div>
       <div className="right">
         <Canvas>
           <OrbitControls enableZoom={false} autoRotate={true}/>
@@ -45,8 +58,8 @@ const Home = () => {
             <MeshDistortMaterial
             color= "#2E4F4F"
             attach="material"
-            distort={0.5}
-            speed={2}
+            distort={0.3}
+            speed={4}
             />
           </Sphere>
         </Canvas>

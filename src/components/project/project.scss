@@ -2,44 +2,71 @@
     height: 100vh;
     background-color: #2C3333;
     display: flex;
-    flex-direction: column;
     color: white;
+    justify-content: space-between;
 
-    .desc {
-        display: flex;
-        justify-content: space-between;
+    .left {
+       display: flex;
+       justify-content: center;
+       width: 50%;
+       margin: 100px 100px;
+        .person {
+            border-radius: 20px;
+            width: 550px;
+            height: 400px;
+            margin-left: 50px;
 
-        .title {
-            justify-content: center;
-            align-items: center;
-            font-size: 68px;
-            margin-left: 40px;
-            color: #CBE4DE;
         }
-        .des {
-            width: 500px;
-            margin-top: 60px;
-            color: #CBE4DE;
+        .persons {
+            position: absolute;
+            margin: 330px 0px 0px 550px ;
+            width: 70px;
+            height: 70px;
+            z-index: 2;
+        }
+
+        .perX {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+
+            .per {
+                width: 180px;
+                height: 180px;
+                background-color: white;
+                margin: 280px 0px 0px 220px ;
+                border-radius: 50%;
+                animation: rotation 6s infinite linear
+            }
+            @keyframes rotation {
+          from {
+     transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
         }
     }
 
-    .points {
+    .right {
         display: flex;
-        flex-direction: row;
-        gap: 20px;
-        justify-content: center;
-        align-items: center;
-       margin: 180px 20px;
+        width: 50%;
+        flex-direction: column;
+        margin: 100px 100px;
 
-       .pointList {
-        width: 400px;
-
-        .dd {
+        h1 {
             color: #0E8388;
         }
-       }
-       .pointList>small {
-        color: #CBE4DE;
-       }
+         h3 {
+            font-weight: bold;
+            color: #CBE4DE;
+         }
+
+         p {
+            width: 400px;
+            color: #CBE4DE;
+         }
     }
+
 }
