@@ -18,8 +18,9 @@ const Project = () => {
       <div className="right">
         <h1>About ME</h1>
         <h3>A Front-end Developer based in INDIA<LocationOnIcon className='icc'/></h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nostrum unde neque modi commodi magni laboriosam cum similique velit architecto tempore iusto, soluta explicabo earum natus repellat, accusantium perspiciatis adipisci porro numquam autem id fuga voluptates. Enim, architecto. Aut, placeat et? Quia perspiciatis incidunt officiis, dolore voluptatum modi cumque totam? A sunt odit quis, atque delectus unde sequi temporibus consectetur.</p>
-      </div>
+        <p>Based in India, I am a front-end Web developer specializing in Javascript and React. I also Provide Clients With UI/UX Designs and Help Them with Their Design Strategies for Their Businesses. I can proudly say That I have a great understanding of the complete web development life cycle. I take pride in building top-notch websites and apps with elegant user interfaces. In my career, I have worked on a wide range of development verticals</p>
+
+        </div>
     </div>
   )
 }
