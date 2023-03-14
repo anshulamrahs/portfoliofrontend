@@ -1,0 +1,135 @@
+.portfolio {
+    width: 100vw;
+    height: auto;
+    background-color: #000000 ;
+    overflow: hidden;
+    padding: 80px ;
+
+    .content {
+        color: rgb(255, 255, 255);
+        display: flex;
+        margin-left: 220px;
+        flex-direction: column;
+
+        p {
+            font-size: 22px;
+            
+        }
+
+        span {
+            display: flex;
+            font-size: 16px;
+            align-items: center;
+
+            .iccc {
+                margin-left: 10px;
+                color: greenyellow;
+            }
+        }
+
+    }
+    .porto {
+        width: 1000px;
+        height: 440px;
+        display: flex;
+        background-color: #f9f9f9;
+        display: flex;
+        margin-left: 200px;
+        border-radius: 20px;
+        margin-top: 20px;
+    
+        .pImg {
+    width: 500px;
+    height: 350px;
+    background-color: #f9f9f9;
+    margin: 50px 40px;
+    border-radius: 20px;
+    overflow: hidden;
+    
+    
+    
+    
+    img {
+        width: 100%;
+        height: auto;
+        border: 1px solid black;
+        border-radius: 20px;
+        border: none;
+        position: relative;
+       // transform: translateY(0%);
+        
+        
+    }
+    img:hover {
+    animation: mymove 3s ease-in-out;
+    }
+    
+    @keyframes mymove {
+        from {top: -120px;}
+        to {top: 0px;}
+      }
+        }
+    
+        .pText {
+            width: 500px;
+    height: 350px;
+    background-color: #f9f9f9;
+    margin: 50px 40px;
+    border-radius: 20px;
+    
+            h2{
+                margin-left: 80px;
+                color: rgb(0, 0, 0);
+    
+                .icon {
+                    margin-left: 5px;
+                    margin-top: 3px;
+                    color: rgb(0, 0, 0);
+                }
+            }
+            .pTex{
+                margin-left: 30px;
+                overflow: clip;
+            }
+    
+            .stack {
+                display: flex;
+                gap: 20px;
+                color: black;
+                margin-left: 50px;
+    
+                p{
+                   margin-left: 25px;
+                   background-color: white;
+                   padding: 10px 15px;
+                   border-radius: 20px;
+                   font-weight: bold;
+                }
+            }
+    
+            .links {
+                display: flex;
+                
+                justify-content: center;
+                align-items: center;
+    
+                a {
+                    background-color: #f9f9f9;
+                    margin-right: 5px;
+                    margin-left: 25px;
+                    padding: 10px 15px;
+                    font-size: 22px;
+                    font-weight: bold;
+                    text-decoration: none;
+                    color: rgb(0, 0, 0);
+    
+                    .ico {
+                        margin-left: 5px;
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

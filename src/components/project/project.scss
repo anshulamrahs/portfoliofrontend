@@ -1,6 +1,6 @@
 .projects {
     height: 100vh;
-    background-color: #2C3333;
+    background-color: #000000;
     display: flex;
     color: white;
     justify-content: space-between;
@@ -33,7 +33,7 @@
             .per {
                 width: 180px;
                 height: 180px;
-                background-color: white;
+                background-color: rgb(255, 255, 255);
                 margin: 280px 0px 0px 220px ;
                 border-radius: 50%;
                 animation: rotation 6s infinite linear
@@ -54,18 +54,28 @@
         width: 50%;
         flex-direction: column;
         margin: 100px 100px;
+        
+        //justify-content: center;
 
         h1 {
-            color: #0E8388;
+            color: #ffffff;
+            font-size: 22px;
         }
          h3 {
             font-weight: bold;
-            color: #CBE4DE;
+            color: #ffffff;
+            align-items: center;
+            display: flex;
+
+            .icc {
+                color: #ff6242;
+                margin-left: 5px;
+            }
          }
 
          p {
             width: 400px;
-            color: #CBE4DE;
+            color: #ffffff;
          }
     }
 

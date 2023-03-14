@@ -1,7 +1,7 @@
 
 .container {
     display: flex;
-    background-color: #2C3333;
+    background-color: #000000;
     width: 100%;
     left: 0;
     padding: 0;
@@ -32,17 +32,17 @@
             width: 65%;
          }
         .ico {
-            background-color: #2C3333;
+            background-color: #000000;
             //background-color: #f88a1b;
             border-radius: 50%;
             width: 60px;
             height: 60px;
-            margin-left: 15px;
-            margin-top: 15px;
-           // margin: 30px;
+            //margin-left: 15px;
+           // margin-top: 15px;
+            margin: 15px 0px 0px 15px;
         }
         .orangename {
-            color: #CBE4DE;
+            color: #ffffff;
             font-family: 'Roboto', sans-serif;
             font-size: 50px;
             margin: 250px 0 0 50px;
@@ -73,7 +73,7 @@
                 .lImg {
                     width: 50px;
                     height: 50px;
-                    background-color: #f4f5f6;
+                    background-color: #000000;
                     border-radius: 50px;
                 }
             }

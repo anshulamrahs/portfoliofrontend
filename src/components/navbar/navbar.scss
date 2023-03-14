@@ -1,6 +1,6 @@
 .navbar {
     display: flex;
-    background: #2C3333;
+    background: #000000;
    // background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 35%, rgb(42, 42, 42) 100%);
     color: rgb(255, 255, 255);
     width: 100vw;
@@ -22,14 +22,14 @@
             font-size: 22px;
             font-family: 'Roboto', sans-serif;
             font-weight: 400;
-            color: #CBE4DE;
+            color: #ffffff;
             
         }
 
         .link {
             margin-right: 35px;
             font-size: 16px;
-            color: #CBE4DE;
+            color: #f9f9f9;
 
         }
 
@@ -51,7 +51,7 @@
             font-family: 'Roboto', sans-serif;
             font-weight: 300;
             background: black;
-            color: #CBE4DE;
+            color: #ffffff;
             font-size: 15px;
         }   
     }

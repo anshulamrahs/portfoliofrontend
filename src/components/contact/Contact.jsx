@@ -5,6 +5,7 @@ import { useState } from 'react';
 import EmailIcon from '@mui/icons-material/Email';
 import CallIcon from '@mui/icons-material/Call';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import SwipeDownAltIcon from '@mui/icons-material/SwipeDownAlt';
 
 
 const white = {background:'white'}
@@ -93,7 +94,8 @@ const Contact = () => {
         </div>
       </div> 
       <div className="right">
-        <h1>Get in Touch today</h1>
+        <h1>Contact</h1>
+        <h3>Don't be Shy, Hit Me Up!<SwipeDownAltIcon className='iconn'/></h3>
       <form onSubmit={handleSubmit}>
         {inputs.map((input) => (
           <Cform 
