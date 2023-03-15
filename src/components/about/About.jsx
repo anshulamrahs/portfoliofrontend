@@ -1,13 +1,13 @@
 import React from 'react'
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-import './project.scss'
+import './about.scss'
 
 import Anshul from '../assets/ansu.jpeg'
 import Male from '../assets/male.png'
 import Tex from '../assets/texts.png'
 const Project = () => {
   return (
-    <div className='projects'>
+    <div className='projects' id='about'>
       <div className="left">
         <img className='person' src={Anshul} alt="" />
         <img className='persons' src={Male} alt="" />

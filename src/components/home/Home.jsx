@@ -20,7 +20,7 @@ import Hand from '../assets/hand.jpeg'
 const Home = () => {
 
   return (
-    <div className='container'>
+    <div className='container' id="home">
       <div className="left">
       <span className='orangename'>Hi, I'm Anshul. A Front-end Dev Based In India<img className='ico' src={Hand} alt=""/></span>
       <div className="text">
@@ -56,7 +56,7 @@ const Home = () => {
           <directionalLight position={[4,3,2]}/>
           <Sphere args={[1,100,200]} scale={1.4}>
             <MeshDistortMaterial
-            color= "#282A3A"
+            color= "#AD7BE9"
             attach="material"
             distort={0.3}
             speed={4}

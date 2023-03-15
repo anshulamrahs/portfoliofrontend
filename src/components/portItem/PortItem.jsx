@@ -13,7 +13,7 @@ const PortItem = () => {
         </div>
         <div className="pText">
             <h2>Booking App<LiveTvIcon className='icon'/></h2>
-            <p className='pTex'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem deserunt quasi tempore explicabo repellendus, porro maiores voluptatum eaque error labore odit, eos officiis. Commodi cum, pariatur suscipit quae quos eligendi?</p>
+            <p className='pTex'>This is a Personal Project made using React, Scss and Javascript. React Routing is used for Linking Different pages.The Project has dynamic components with a desktop view.</p>
             <div className="stack">
                 <p>React</p>
                 <p>scss</p>

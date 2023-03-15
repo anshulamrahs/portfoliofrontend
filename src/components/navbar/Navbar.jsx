@@ -14,11 +14,10 @@ const Navbar = () => {
     <div className='navbar'>
       <div className="left">
       <span className='logo'>moxa.</span><span className='icon'>com</span>
-      <span className='link'>About</span>
-      <span className='link'>Work</span>
-      <span className='link'>Skills</span>
-      <span className='link'>Services</span>
-      <span className='link'>Reviews</span>
+      <a href="#home"className='link'>Home</a>
+      <a href="#about"className='link'>About</a>
+      <a href="#work"className='link'>Work</a>
+      <a href="#contact"className='link'>Contact</a>
       </div>
       <div className="right">
         <button 

@@ -5,6 +5,7 @@
     display: flex;
     color: white;
     justify-content: space-between;
+    align-items: center;
 
     .left {
        display: flex;
@@ -54,7 +55,7 @@
         display: flex;
         width: 50%;
         flex-direction: column;
-        margin: 100px 100px;
+       // margin: 100px 100px;
         
         //justify-content: center;
 

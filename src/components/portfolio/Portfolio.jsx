@@ -9,7 +9,7 @@ import Netf from '../assets/netflixxx.png'
 
 const Portfolio = () => {
   return (
-    <div className='portfolio'>
+    <div className='portfolio' id='work'>
       <div className="content">
         <p>PORTFOLIO</p>
         <span>Each Product is a unique piece of development<ExtensionIcon className='iccc'/></span>
@@ -20,7 +20,7 @@ const Portfolio = () => {
         </div>
         <div className="pText">
             <h2>Netflix Clone<LiveTvIcon className='icon'/></h2>
-            <p className='pTex'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem deserunt quasi tempore explicabo repellendus, porro maiores voluptatum eaque error labore odit, eos officiis. Commodi cum, pariatur suscipit quae quos eligendi?</p>
+            <p className='pTex'>This is a Personal Project made using React, Scss, Javascript and Three Js is used for modelling.The Project contains the Home and Featured Movies Section and is built for desktop View.</p>
             <div className="stack">
                 <p>React</p>
                 <p>scss</p>

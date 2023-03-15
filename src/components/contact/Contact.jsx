@@ -73,7 +73,7 @@ const Contact = () => {
   };
 
   return (
-    <div className='contact'>
+    <div className='contact' id='contact'>
       <div className="left">
       <div className="foot">
         <div className='cont'>

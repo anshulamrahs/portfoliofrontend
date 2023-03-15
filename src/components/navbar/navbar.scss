@@ -15,7 +15,7 @@
     z-index: 999;
     
     .left {
-        margin-left: 40px;
+        margin-left: 80px;
         //align-items: center;
 
         .logo {
@@ -23,6 +23,11 @@
             font-family: 'Roboto', sans-serif;
             font-weight: 400;
             color: #ffffff;
+            padding: 0px 0px 0px 0px;
+            
+        }
+        a{
+            text-decoration: none;
             
         }
 
@@ -37,16 +42,16 @@
             font-size: 16px;
             color: #ff7f02;
             font-weight: 250;
-            margin-right: 350px;
+            margin-right: 400px;
         }
     }
     .right {
         
 
         .click {
-            margin-right: 90px;
+            margin-right: 50px;
             border: none;
-            padding: 10px 15px;
+            padding: 10px 25px;
             border-radius: 10px;
             font-family: 'Roboto', sans-serif;
             font-weight: 300;
