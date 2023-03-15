@@ -10,7 +10,7 @@ import JS from '../assets/jasd.png'
 import SASS from '../assets/sass.webp'
 import TAIL from '../assets/tail.avif'
 import Hand from '../assets/hand.jpeg'
-//import CV from '../assets/cv.pdf'
+import CV from '../assets/anshulcv.pdf'
 
 
 //import Desk from '../assets/crp.jpeg'
@@ -34,7 +34,11 @@ const Home = () => {
         ]
         }}
         />
+        
       </div>
+      <a href={CV} download="Anshul sharma Resume" >
+       <button className="btn">Download CV</button>
+      </a>
       <div className="skills">
         <p>Tech Stack  |</p>
         <div className="logos">

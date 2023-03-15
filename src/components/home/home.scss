@@ -50,6 +50,22 @@
             
         }    
 
+        a {
+            display: flex;
+            align-items: center;
+            margin: 20px 80px;
+            text-decoration: none;
+
+            .btn {
+                display: flex;
+                padding: 10px 15px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+                border: none;
+            }
+        }
+
         .skills {
             display: flex;
             align-items: center;
