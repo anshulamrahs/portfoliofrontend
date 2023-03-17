@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .projects {
     height: 100vh;
     width: 100vw;
@@ -7,16 +9,35 @@
     justify-content: space-between;
     align-items: center;
 
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+   
+
     .left {
        display: flex;
        justify-content: center;
        width: 50vw;
-       //margin: 100px 100px;
+       
+       @include mobile {
+        width: 50vw;
+        
+    }
         .person {
             border-radius: 20px;
             width: 550px;
             height: 400px;
             margin-left: 50px;
+            @include mobile {
+            width: 250px;
+            height: 150px; 
+            margin-left: 20px;
+        
+           }
 
         }
         .persons {
@@ -25,6 +46,14 @@
             width: 70px;
             height: 70px;
             z-index: 2;
+
+            @include mobile {
+            position: absolute;
+            margin: 110px 0px 0px 20px ;
+            width: 40px;
+            height: 40px;
+            z-index: 2;
+            }
         }
 
         .perX {
@@ -38,7 +67,16 @@
                 background-color: rgb(255, 255, 255);
                 margin: 280px 0px 0px 220px ;
                 border-radius: 50%;
-                animation: rotation 6s infinite linear
+                animation: rotation 6s infinite linear;
+
+                @include mobile {
+                    width: 80px;
+                    height: 80px;
+                    background-color: rgb(255, 255, 255);
+                    margin: 90px 0px 0px 12px ;
+                    border-radius: 50%;
+                    animation: rotation 6s infinite linear;
+                }
             }
             @keyframes rotation {
           from {
@@ -57,20 +95,42 @@
         flex-direction: column;
         align-items: center;
 
+        @include mobile {
+            width: 50vw;
+            flex-direction: column;
+            display: flex;
+            margin-left: 20px;
+        }
+
         h1 {
             color: #ffffff;
             font-size: 22px;
             margin-right: 280px;
+
+            @include mobile {
+                font-size: 12px;
+                margin: 50px 20px;
+                
+            }
         }
          h3 {
             font-weight: bold;
             color: #ffffff;
             align-items: center;
             display: flex;
+            @include mobile {
+        font-size: 14px;
+        display: flex;
+        
+            }
 
             .icc {
                 color: #ff6242;
                 margin-left: 5px;
+
+                @include mobile {
+                    width: 15px;
+                }
             }
          }
 
@@ -78,6 +138,12 @@
             width: 30vw;
             color: #ffffff;
             margin-left: 50px;
+
+            @include mobile {
+        font-size: 12px;
+        width: 50vw;
+        margin-left: 0px;
+            }
          }
     }
 

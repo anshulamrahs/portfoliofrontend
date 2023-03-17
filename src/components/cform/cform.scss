@@ -1,12 +1,25 @@
+@import "../../global.scss";
+
 .forminput {
     display: flex;
     margin: 10px;
     flex-direction: column;
+
+    @include mobile {
+        margin-left: 40px;
+    }
     
     input {
         padding: 15px;
         margin: 10px;
         width: 30vw;
+
+        @include mobile {
+            padding: 10px;
+            width: 50vw;
+            
+
+        }
         
     }
     label {
@@ -15,6 +28,11 @@
         align-items: center;
         justify-content: flex-start;
         display: flex;
+
+        @include mobile {
+            font-size: 16px;
+            margin-left: 20px;
+        }
         
         .ico {
             color: #ff7f02;

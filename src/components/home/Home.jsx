@@ -40,7 +40,7 @@ const Home = () => {
        <button className="btn">Download CV</button>
       </a>
       <div className="skills">
-        <p>Tech Stack  |</p>
+        <p>Tech Stack|</p>
         <div className="logos">
           <ul className="ulI">
             <li><img className="lImg" src={HTML} alt="" /></li>

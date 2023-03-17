@@ -1,3 +1,5 @@
+@import '../../global.scss';
+
 
 .container {
     display: flex;
@@ -5,6 +7,10 @@
     width: 100vw;
     height: 100vh;
     z-index: 990;
+
+    @include mobile {
+        align-items: center;
+    }
   
     
     
@@ -14,6 +20,8 @@
          height: 100vh;
          width: 60vw;
 
+        
+
          .text {
             display: flex;
             color: #f88a1b;
@@ -22,12 +30,24 @@
             //margin: 30px 0 0 50px;
             padding: 30px 50px;
             width: 60vw;
+
+            @include mobile {
+              font-size: 18px;
+              padding: 20px 50px ;
+                
+             }
          }
         .ico {
             border-radius: 50%;
             width: 60px;
             height: 60px;
             padding: 10px 10px;
+
+            @include mobile {
+                width: 20px;
+                height: 20px;
+                
+             }
         }
         .orangename {
             color: #ffffff;
@@ -35,6 +55,11 @@
             font-size: 45px;
             margin: 250px 0 0 50px;
             width: 50vw;
+            @include mobile {
+                font-size: 22px;
+                margin: 250px 0px 0px 50px;
+                
+             }
             
         }    
 
@@ -44,11 +69,24 @@
             margin: 20px 50px;
             text-decoration: none;
 
+            @include mobile {
+                margin: 20px 0px;
+            }
+
             .btn {
                 padding: 15px 18px;
                 border-radius: 5px;
                 border: none;
                 font-weight: bold;
+
+                @include mobile {
+                    font-size: 8px;
+                    border: none;
+                    padding: 5px 5px;
+                    margin: 20px 50px;
+                    
+                    
+                 }
             }
         }
 
@@ -59,9 +97,22 @@
             margin: 0px 250px;
             width: 60vw;
 
+           
+
+            @include mobile {
+                margin: 0px 50px;
+            }
+
             p {
                 font-size: 32px;
                 color: #CBE4DE;
+
+                @include mobile {
+                    font-size: 14px;
+                    
+                    
+                   
+                }
             }
 
             .logos {
@@ -78,6 +129,11 @@
                     height: 50px;
                     background-color: #000000;
                     border-radius: 50px;
+
+                    @include mobile {
+                        width: 20px;
+                        height: 20px;
+                    }
                 }
             }
         }
@@ -86,6 +142,12 @@
         display: flex;
         height: 100vh;
         width: 40vw;
+
+        @include mobile {
+            display: flex;
+            height: 20vh;
+            width: 20vw;
+        }
         
     }
     
