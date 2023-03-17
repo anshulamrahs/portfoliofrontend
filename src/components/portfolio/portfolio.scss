@@ -34,7 +34,7 @@
 
     }
     .porto {
-        width: max-content;
+        width: calc(100vw - 30vw);
         height: 440px;
         display: flex;
         background-color: #f9f9f9;

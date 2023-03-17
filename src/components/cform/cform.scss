@@ -1,16 +1,13 @@
 .forminput {
     display: flex;
-    margin: 0px 20px;
+    margin: 10px;
     flex-direction: column;
-    margin: 10px 200px;
-
-
-
+    
     input {
         padding: 15px;
-        margin: 10px 0px;
-        width: 400px;
-        //border: 1px solid #ff7f02;
+        margin: 10px;
+        width: 30vw;
+        
     }
     label {
         font-size: 26px;

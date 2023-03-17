@@ -58,7 +58,7 @@ const Home = () => {
           <OrbitControls enableZoom={false} autoRotate={true}/>
           <ambientLight intensity={1}/>
           <directionalLight position={[4,3,2]}/>
-          <Sphere args={[1,100,200]} scale={1.4}>
+          <Sphere args={[1,100,200]} scale={1.2}>
             <MeshDistortMaterial
             color= "#AD7BE9"
             attach="material"
