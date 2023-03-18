@@ -20,6 +20,7 @@ const Navbar = () => {
       <a href="#contact"className='link'>Contact</a>
       </div>
       <div className="right">
+        <a href="#contact">
         <button 
         onMouseOver={
           () => setColor(orange)
@@ -28,6 +29,7 @@ const Navbar = () => {
           () => setColor(white)
         }
         style = {color} className='click' >Hire Me!</button>
+        </a> 
       </div>
     </div>
   )
