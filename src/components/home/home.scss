@@ -3,7 +3,7 @@
 
 .container {
     display: flex;
-    background-color: #000000;
+    background-color: #232323;
     width: 100vw;
     height: 100vh;
     z-index: 990;
@@ -19,24 +19,22 @@
          flex-direction: column;
          height: 100vh;
          width: 60vw;
+         //justify-content: center;
+         //align-items: center;
 
-        
-
-         .text {
-            display: flex;
-            color: #f88a1b;
+         .orangename {
+            color: #ffffff;
             font-family: 'Roboto', sans-serif;
-            font-size: 40px;
-            //margin: 30px 0 0 50px;
-            padding: 30px 50px;
-            width: 60vw;
-
+            font-size: 45px;
+            margin: 200px 0 0 90px;
+            width: 50vw;
             @include mobile {
-              font-size: 18px;
-              padding: 20px 50px ;
+                font-size: 22px;
+                margin: 250px 0px 0px 50px;
                 
              }
-         }
+            
+        }    
         .ico {
             border-radius: 50%;
             width: 60px;
@@ -49,24 +47,33 @@
                 
              }
         }
-        .orangename {
-            color: #ffffff;
-            font-family: 'Roboto', sans-serif;
-            font-size: 45px;
-            margin: 250px 0 0 50px;
-            width: 50vw;
+
+        .text {
+
+            //display: flex;
+            font-size: 32px;
+            color: #d4d4d4;
+            padding: 50px;
+            margin-left: 43px;
+
             @include mobile {
-                font-size: 22px;
-                margin: 250px 0px 0px 50px;
-                
-             }
+                font-size: 18px;
+                padding: 20px 50px ;
+                  
+               }
+
+        }
+
+        
+
             
-        }    
+         }
+
 
         a {
             display: flex;
             align-items: center;
-            margin: 20px 50px;
+            padding: 20px 50px;
             text-decoration: none;
 
             @include mobile {
@@ -78,15 +85,27 @@
                 border-radius: 5px;
                 border: none;
                 font-weight: bold;
+                margin-left: 43px;
+                font-size: 14px;
+                transition: transform .3s ease-in;
+                
+                &:hover {
+                    background-color: #595959;
+                    transform: translateY(-3px);
+                    color: rgb(255, 255, 255);
+                 }
 
                 @include mobile {
                     font-size: 8px;
                     border: none;
                     padding: 5px 5px;
                     margin: 20px 50px;
+
                     
                     
                  }
+
+                
             }
         }
 
@@ -94,7 +113,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0px 250px;
+            margin: 0px 270px;
             width: 60vw;
 
            
@@ -106,6 +125,7 @@
             p {
                 font-size: 32px;
                 color: #CBE4DE;
+                margin-top: 130px;
 
                 @include mobile {
                     font-size: 14px;
@@ -129,6 +149,12 @@
                     height: 50px;
                     background-color: #000000;
                     border-radius: 50px;
+                    transition: transform .3s ease-in;
+                    margin-top: 100px;
+
+                    &:hover {
+                        transform: translateY(-8px);
+                    }
 
                     @include mobile {
                         width: 20px;
@@ -140,16 +166,41 @@
     }
     .right {
         display: flex;
-        height: 100vh;
+        height: 75vh;
         width: 40vw;
+        justify-content: center;
+        align-items: center;
 
         @include mobile {
             display: flex;
             height: 20vh;
             width: 20vw;
         }
-        
+
+        canvas {
+            margin-top: 80px;
+        }
+
+        img {
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            margin-top: 100px;
+            
+            animation: transform 3s ease-in infinite alternate;
+        }
+
+        @keyframes transform {
+            from {
+                transform: translateY(0px);
+            }
+            to {
+                transform: translateY(40px);
+            }
+            
+        }
     }
     
+    
 
-}
+

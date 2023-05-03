@@ -11,6 +11,7 @@ import SASS from '../assets/sass.webp'
 import TAIL from '../assets/tail.avif'
 import Hand from '../assets/hand.jpeg'
 import CV from '../assets/anshulcv.pdf'
+import ASK from '../assets/rickg.png'
 
 
 //import Desk from '../assets/crp.jpeg'
@@ -40,7 +41,7 @@ const Home = () => {
        <button className="btn">Download CV</button>
       </a>
       <div className="skills">
-        <p>Tech Stack|</p>
+        <p>Tech Stack    |</p>
         <div className="logos">
           <ul className="ulI">
             <li><img className="lImg" src={HTML} alt="" /></li>
@@ -58,16 +59,16 @@ const Home = () => {
           <OrbitControls enableZoom={false} autoRotate={true}/>
           <ambientLight intensity={1}/>
           <directionalLight position={[4,3,2]}/>
-          <Sphere args={[1,100,200]} scale={1.2}>
+          <Sphere args={[1,100,200]} scale={2.2}>
             <MeshDistortMaterial
-            color= "#AD7BE9"
+            color= "#b7e94c"
             attach="material"
-            distort={0.3}
+            distort={0.4}
             speed={4}
             />
           </Sphere>
         </Canvas>
-      {/*<img src={Desk} alt="me"/> */}
+      <img src={ASK} alt="me"/> 
       </div>
     </div>
   )

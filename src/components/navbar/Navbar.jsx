@@ -3,8 +3,8 @@ import "./navbar.scss"
 import { useState } from 'react'
 
 
-const white = {background: 'black'}
-const orange = {background: '#ff7f02'}
+const white = {background: '#373737'}
+const orange = {background: '#949c94'}
 
 const Navbar = () => {
 
@@ -13,11 +13,14 @@ const Navbar = () => {
   return (
     <div className='navbar'>
       <div className="left">
-      <span className='logo'>moxa.</span><span className='icon'>com</span>
+      <span className='logo'>Anshul</span>
+      </div>
+      <div className="middle">
       <a href="#home"className='link'>Home</a>
       <a href="#about"className='link'>About</a>
       <a href="#work"className='link'>Work</a>
       <a href="#contact"className='link'>Contact</a>
+
       </div>
       <div className="right">
         <a href="#contact">
