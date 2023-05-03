@@ -32,6 +32,7 @@ const Portfolio = () => {
         </div>
     </div>
      <PortItem/>
+     <PortItem/>
     </div>
   )
 }
