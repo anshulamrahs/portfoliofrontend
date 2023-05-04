@@ -6,6 +6,9 @@ import LiveTvIcon from '@mui/icons-material/LiveTv';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import Netf from '../assets/netflixxx.png'
+import Book from '../assets/booksd.png'
+import Admin from '../assets/admin.png'
+
 
 const Portfolio = () => {
   return (
@@ -16,7 +19,8 @@ const Portfolio = () => {
       </div>
       <div className='porto'>
         <div className="pImg">
-           <a href='_blank'><img  src={Netf}  Style="transform: translateY(0%);transition: transform 10s ease-in-out 0s;"alt=""/></a> 
+           <a href='_blank'>
+            <img  src={Netf}  Style="transform: translateY(0%);transition: transform 10s ease-in-out 0s;"alt=""/></a> 
         </div>
         <div className="pText">
             <h2>Netflix Clone<LiveTvIcon className='icon'/></h2>
@@ -31,8 +35,19 @@ const Portfolio = () => {
             </div>
         </div>
     </div>
-     <PortItem/>
-     <PortItem/>
+     <PortItem
+     img={Book}
+     links="https://bookingui.netlify.app"
+     link="https://github.com/anshulamrahs/bookingui"
+     name="Booking App"
+     desc="This is a Personal Project made using React, Scss and Javascript. React Routing is used for Linking Different pages.The Project has dynamic components with a desktop view"
+     />
+     <PortItem
+     img={Admin}
+     links="https://admindashbro.netlify.app"
+     link="https://github.com/anshulamrahs/Adminpanel"
+     name="Admin Dashboard"
+     desc="This is a admin dashboard app with multiple pages using react-router and implemented Dark mode using Context Api"/>
     </div>
   )
 }

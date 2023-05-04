@@ -1,4 +1,7 @@
 $width: 768px;
+$darkgrey: #232323;
+$mediumgray:#373737;
+$lightgray: #686367;
 
 @mixin mobile {
     @media (max-width: #{$width}) {

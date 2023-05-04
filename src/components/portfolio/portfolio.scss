@@ -3,13 +3,14 @@
 .portfolio {
     width: 100vw;
     height: auto;
-    background-color: #232323 ;
+    background-color: #{$darkgrey} ;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding-top: 40px;
     //overflow: hidden;
+    padding-bottom: 50px;
 
     @include mobile {
         height: auto;
@@ -59,7 +60,7 @@
         width: calc(100vw - 30vw);
         height: 440px;
         display: flex;
-        background-color: #373737;
+        background-color: #{$mediumgray};
         display: flex;
         justify-content: center;
         align-items: center;
@@ -78,7 +79,7 @@
         .pImg {
     width: 500px;
     height: 350px;
-    background-color: #373737;
+    background-color: #{$mediumgray};
     margin: 50px 40px;
     border-radius: 5px;
     overflow: hidden;
@@ -117,7 +118,7 @@
         .pText {
             width: 300px;
     height: 350px;
-    background-color: #373737;
+    background-color: #{$mediumgray};
     //margin: 50px 40px;
     border-radius: 5px;
     padding: 40px 50px;
@@ -175,7 +176,7 @@
     
                 p{
                    //margin-left: 5px;
-                   background-color: #686367;
+                   background-color: #{$lightgray};
                    padding: 10px 15px;
                    border-radius: 5px;
                    font-size: 18px;
@@ -204,7 +205,7 @@
                 
     
                 a {
-                    background-color: #686367;
+                    background-color: #{$lightgray};
                     padding: 10px 15px;
                     font-size: 18px;
                     font-weight: bold;

@@ -9,7 +9,7 @@ import SwipeDownAltIcon from '@mui/icons-material/SwipeDownAlt';
 
 
 const white = {background:'white'}
-const orange = {background:'#ff7f02'}
+const orange = {background:'#686367'} //to showcase using state as hover function
 
 const Contact = () => {
   const [isHovered, setIsHovered] = useState(white)

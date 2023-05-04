@@ -3,7 +3,7 @@
 
 .container {
     display: flex;
-    background-color: #232323;
+    background-color: #{$darkgrey};
     width: 100vw;
     height: 100vh;
     z-index: 990;
@@ -19,8 +19,7 @@
          flex-direction: column;
          height: 100vh;
          width: 60vw;
-         //justify-content: center;
-         //align-items: center;
+        
 
          .orangename {
             color: #ffffff;
@@ -90,7 +89,7 @@
                 transition: transform .3s ease-in;
                 
                 &:hover {
-                    background-color: #595959;
+                    background-color: #{$lightgray};
                     transform: translateY(-3px);
                     color: rgb(255, 255, 255);
                  }
