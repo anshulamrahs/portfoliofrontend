@@ -1,69 +1,81 @@
+@import "../../global.scss";
+
 .navbar {
+  display: flex;
+  background: #222c40;
+  color: #f1f6f9;
+  width: 100vw;
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  border-bottom: 0.2px solid #8e96a468;
+  
+
+  .left {
+    margin-left: 80px;
+    width: 10vw;
     display: flex;
-    background: #2b2b2b;
-    color: rgb(255, 255, 255);
-    width: 100vw;
-    height: 70px;
-    justify-content: space-between;
     align-items: center;
-    position: fixed;
-    z-index: 999;
-    border-bottom: 0.2px solid rgb(164, 164, 164);
-    
-    .left {
-        margin-left: 80px;
-        width: 10vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-        
+    justify-content: center;
 
-        .logo {
-            font-size: 32px;
-            color: #cefa6fd7;
-            
-        }
+    .logo {
+      font-size: 22px;
+      color: #ffffffd7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: nunito, sans-serif;
+
+      .ikm {
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .middle {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      font-family: nunito, sans-serif;
 
     }
 
-    .middle {
-        width: 80vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        a {
-            text-decoration: none;
-        }
-
-        .link {
-            color: #ffffff;
-            font-size: 22px;
-            display: flex;
-            margin-right: 30px;
-            padding: 5px 10px;
-
-            &:hover {
-                border-bottom: 1px solid #ffffff;
-                padding: 5px 10px;
-            }
-        }
+    .link {
+      color: #ffffff;
+      font-size: 22px;
+      display: flex;
+      margin-right: 30px;
+      padding: 5px 10px;
+      font-family: nunito, sans-serif;
+      &:hover {
+        border-bottom: 1px solid #8e96a468;
+        padding: 5px 10px;
+      }
     }
-    .right {
-        padding-right: 50px;
-        width: 10vw;
+  }
+  .right {
+    padding-right: 50px;
+    width: 10vw;
 
-        .click {
-            
-            padding: 10px 25px;
-            border-radius: 5px;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 300;
-            background: #373737;
-            color: #ffffff;
-            font-size: 15px;
-            border: 0.1px solid white;
-        }   
-    }
+    .click {
+        padding: 10px 25px;
+        border-radius: 5px;
+        font-family: nunito, sans-serif;
+        font-weight: 300;
+        background: #{$mediumgray};
+        color: #ffffff;
+        font-size: 15px;
+        //border: 0.1px solid white;
+        border: none;
+        font-weight: 500;
+      }
+  }
 }

@@ -4,9 +4,10 @@
     display: flex;
     height: 20vh;
     width: 100vw;
-    background-color: #{$mediumgray};
+    background-color: #293449;
     justify-content: space-around;
     flex-direction: column;
+    
 
     @include mobile {
         width: 100vw;
@@ -16,13 +17,15 @@
         justify-content: space-between;  
         height: 20vh;
         align-items: center;
+        font-family: nunito, sans-serif;
         
         .name {
 
             h2 {
-                color: rgb(255, 255, 255);
+                color: #{$textcolor};
                 padding-left: 30px;
                 font-size: 20px;
+                font-family: nunito, sans-serif;
 
                 @include mobile {
                    font-size: 16px;
@@ -37,7 +40,7 @@
             justify-content: space-around;
             
             .icon {
-                background-color: #ffffff;
+                background-color: #{$mediumgray};
                 color: rgb(0, 0, 0);
                 width: 20px;
                 height: 20px;

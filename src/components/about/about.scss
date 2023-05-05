@@ -104,9 +104,10 @@
         }
 
         h2 {
-            color: #ffffff;
+            color: #{$textcolor};
             font-size: 32px;
             margin-right: 290px;
+            font-family: nunito, sans-serif;
             
 
             @include mobile {
@@ -117,8 +118,9 @@
         }
          h3 {
             //font-weight: bold;
-            color: #ffffff;
+            color: #{$textcolor};
             margin-right: 70px;
+            font-family: nunito, sans-serif;
            
             @include mobile {
         font-size: 14px;
@@ -138,8 +140,9 @@
 
          p {
             width: 30vw;
-            color: #ffffff;
+            color: #{$textcolor};
             font-size: 16px;
+            font-family: nunito, sans-serif;
 
             @include mobile {
         font-size: 12px;

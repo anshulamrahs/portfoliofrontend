@@ -61,7 +61,7 @@ const Home = () => {
           <directionalLight position={[4,3,2]}/>
           <Sphere args={[1,100,200]} scale={2.2}>
             <MeshDistortMaterial
-            color= "#b7e94c"
+            color= "#394867"
             attach="material"
             distort={0.4}
             speed={4}

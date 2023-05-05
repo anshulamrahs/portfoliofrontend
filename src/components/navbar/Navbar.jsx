@@ -1,10 +1,11 @@
 import React from 'react'
 import "./navbar.scss"
 import { useState } from 'react'
+import fav from '../assets/fvg.png'
 
 
-const white = {background: '#373737'}
-const orange = {background: '#949c94'}
+const white = {background: '#394867'}
+const orange = {background: '#9BA4B5', color: 'black'}
 
 const Navbar = () => {
 
@@ -13,7 +14,7 @@ const Navbar = () => {
   return (
     <div className='navbar'>
       <div className="left">
-      <span className='logo'>Anshul</span>
+      <span className='logo'><img  className='ikm' src={fav} alt='log'/>Anshul</span>
       </div>
       <div className="middle">
       <a href="#home"className='link'>Home</a>

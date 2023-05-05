@@ -22,8 +22,8 @@
         
 
          .orangename {
-            color: #ffffff;
-            font-family: 'Roboto', sans-serif;
+            color: #{$textcolor};
+            font-family: nunito, sans-serif;
             font-size: 45px;
             margin: 200px 0 0 90px;
             width: 50vw;
@@ -51,9 +51,10 @@
 
             //display: flex;
             font-size: 32px;
-            color: #d4d4d4;
+            color: #{$textcolor};
             padding: 50px;
             margin-left: 43px;
+            font-family: nunito, sans-serif;
 
             @include mobile {
                 font-size: 18px;
@@ -74,12 +75,15 @@
             align-items: center;
             padding: 20px 50px;
             text-decoration: none;
+            font-family: nunito, sans-serif;
 
             @include mobile {
                 margin: 20px 0px;
             }
 
             .btn {
+                background-color: #{$lightgray};
+                color: #{$textcolor};
                 padding: 15px 18px;
                 border-radius: 5px;
                 border: none;
@@ -87,11 +91,12 @@
                 margin-left: 43px;
                 font-size: 14px;
                 transition: transform .3s ease-in;
+                font-family: nunito, sans-serif;
                 
                 &:hover {
-                    background-color: #{$lightgray};
+                    background-color: #{$mediumgray};
                     transform: translateY(-3px);
-                    color: rgb(255, 255, 255);
+                    color: rgb(0, 0, 0);
                  }
 
                 @include mobile {
@@ -125,6 +130,7 @@
                 font-size: 32px;
                 color: #CBE4DE;
                 margin-top: 130px;
+                font-family: nunito, sans-serif;
 
                 @include mobile {
                     font-size: 14px;

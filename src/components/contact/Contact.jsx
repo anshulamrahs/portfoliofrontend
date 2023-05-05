@@ -8,8 +8,8 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import SwipeDownAltIcon from '@mui/icons-material/SwipeDownAlt';
 
 
-const white = {background:'white'}
-const orange = {background:'#686367'} //to showcase using state as hover function
+const white = {background:'#394867'}
+const orange = {background:'#9Ba4B5', color:'black'} //to showcase using state as hover function
 
 const Contact = () => {
   const [isHovered, setIsHovered] = useState(white)
