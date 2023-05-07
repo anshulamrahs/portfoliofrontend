@@ -7,8 +7,9 @@
     width: 100vw;
     height: 100vh;
     z-index: 990;
+    overflow-x: hidden;
 
-    @include mobile {
+    @include Tab {
         align-items: center;
     }
   
@@ -17,8 +18,12 @@
     .left{
          display: flex;
          flex-direction: column;
-         height: 100vh;
+         height: 100%;
          width: 60vw;
+
+         @include mobile {
+            width: 100%;
+         }
         
 
          .orangename {
@@ -27,11 +32,15 @@
             font-size: 45px;
             margin: 200px 0 0 90px;
             width: 50vw;
-            @include mobile {
-                font-size: 22px;
-                margin: 250px 0px 0px 50px;
+            @include Tab {
+                
+                margin: 140px 0px 0px 70px;
                 
              }
+
+             @include mobile {
+                font-size: 30px;
+              }
             
         }    
         .ico {
@@ -40,7 +49,7 @@
             height: 60px;
             padding: 10px 10px;
 
-            @include mobile {
+            @include Tab {
                 width: 20px;
                 height: 20px;
                 
@@ -56,11 +65,16 @@
             margin-left: 43px;
             font-family: nunito, sans-serif;
 
-            @include mobile {
-                font-size: 18px;
-                padding: 20px 50px ;
+            @include Tab {
+                
+                padding: 20px 30px ;
                   
                }
+
+               @include mobile {
+                font-size: 18px;
+                width: 100vw;
+              }
 
         }
 
@@ -77,8 +91,9 @@
             text-decoration: none;
             font-family: nunito, sans-serif;
 
-            @include mobile {
+            @include Tab {
                 margin: 20px 0px;
+                padding: 20px 50px;
             }
 
             .btn {
@@ -99,14 +114,17 @@
                     color: rgb(0, 0, 0);
                  }
 
-                @include mobile {
-                    font-size: 8px;
+                @include Tab {
+                    font-size: 14px;
                     border: none;
-                    padding: 5px 5px;
-                    margin: 20px 50px;
+                    padding: 15px 18px;
+                    margin: 20px 30px;    
+                 }
 
-                    
-                    
+                 @include mobile {
+                    font-size: 12px;
+                    padding: 10px 20px;
+                    width: 150px;
                  }
 
                 
@@ -117,13 +135,20 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0px 270px;
-            width: 60vw;
+            
+            width: 100vw;
 
            
 
-            @include mobile {
+            @include Tab {
                 margin: 0px 50px;
+                width: 100vw;
+            }
+
+            @include mobile {
+                width: 80vw;
+                
+
             }
 
             p {
@@ -132,11 +157,18 @@
                 margin-top: 130px;
                 font-family: nunito, sans-serif;
 
+                @include Tab {
+                    font-size: 22px;  
+                    width: 15vw;
+                }
+
                 @include mobile {
-                    font-size: 14px;
-                    
-                    
-                   
+                    font-size: 10px;
+                }
+
+                @include mobile {
+                    font-size: 17px;
+                    margin-bottom: 40px;
                 }
             }
 
@@ -161,9 +193,14 @@
                         transform: translateY(-8px);
                     }
 
+                    @include Tab {
+                        width: 50px;
+                        height: 50px;
+                    }
+
                     @include mobile {
-                        width: 20px;
-                        height: 20px;
+                        width: 30px;
+                        height: 30px;
                     }
                 }
             }
@@ -171,28 +208,28 @@
     }
     .right {
         display: flex;
-        height: 75vh;
+        height: 100vh;
         width: 40vw;
         justify-content: center;
         align-items: center;
 
-        @include mobile {
-            display: flex;
-            height: 20vh;
-            width: 20vw;
+        @include Tab {
+            display: none;
         }
 
-        canvas {
-            margin-top: 80px;
-        }
+      
+       
 
         img {
-            width: 300px;
-            height: 300px;
+            width: 200px;
+            height: 200px;
             position: absolute;
-            margin-top: 100px;
-            
-            animation: transform 3s ease-in infinite alternate;
+            animation: transform 2s ease-in infinite alternate;
+
+            @include Tab {
+                width: 150px;
+                height: 150px;
+            }
         }
 
         @keyframes transform {
@@ -200,7 +237,7 @@
                 transform: translateY(0px);
             }
             to {
-                transform: translateY(40px);
+                transform: translateY(30px);
             }
             
         }

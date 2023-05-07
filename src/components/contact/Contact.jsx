@@ -37,7 +37,7 @@ const Contact = () => {
         id : 2,
         name : 'Subject',
         type : 'text',
-        placeholder : 'what do you want from me ?',
+        placeholder : 'what do you want to discuss ?',
         errortext : 'Minimum length should be 10-15',
         label : 'Subject',
         pattern : "^[A-Za-z0-9]{0,50}$",
@@ -96,7 +96,7 @@ const Contact = () => {
       <div className="right">
         <h1>Contact</h1>
         <h3>Don't be Shy, Hit Me Up!<SwipeDownAltIcon className='iconn'/></h3>
-      <form onSubmit={handleSubmit}>
+      <form action="https://formsubmit.co/anshulamrahs@gmail.com" method="POST" onSubmit={handleSubmit}>
         {inputs.map((input) => (
           <Cform 
           key={input.id} 

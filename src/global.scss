@@ -1,11 +1,18 @@
-$width: 768px;
+$mobilewidth: 415px;
+$tabletwidth: 820px;
 $darkgrey: #212A3E;
 $mediumgray:#9BA4B5;
 $lightgray: #2c3952;
 $textcolor: #F1F6F9;
 
-@mixin mobile {
-    @media (max-width: #{$width}) {
+@mixin Tab {
+    @media (max-width: #{$tabletwidth}) {
         @content
 }
+}
+
+@mixin mobile {
+    @media (max-width:#{$mobilewidth}){
+        @content
+    }
 }

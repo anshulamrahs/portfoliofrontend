@@ -10,7 +10,7 @@ const Cform = (props) => {
     setFocused(true); 
   };
 
-    const {label,errortext, onChange, id , ...otherprops} = props
+    const {label,errortext, onChange, id ,name,type, ...otherprops} = props
   return (
     <div className='forminput'>
         <label>{label}<FlashOnIcon className='ico'/></label>

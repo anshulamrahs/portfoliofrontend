@@ -2,7 +2,7 @@
 import './App.css';
 import Navbar from './components/navbar/Navbar';
 import Home from './components/home/Home';
-import Contact from './components/contact/Contact';
+//import Contact from './components/contact/Contact';
 import About from './components/about/About';
 import Footer from './components/footer/Footer';
 import Portfolio from './components/portfolio/Portfolio';
@@ -17,7 +17,7 @@ function App() {
       <Home/>
       <About/>
       <Portfolio/>
-      <Contact/>
+      
       <Footer/>
     </div>
   );

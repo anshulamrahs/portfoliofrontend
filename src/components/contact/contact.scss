@@ -3,13 +3,13 @@
 .contact {
       display: flex;
       background-color: #{$darkgrey};
-      width: 100vw;
+      width: 100%;
       font-family: nunito, sans-serif;
+      overflow-x: hidden;
 
-      @include mobile {
+      @include Tab {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        //justify-content: space-between;
     }
      
     .left {
@@ -19,8 +19,12 @@
          padding-top: 210px;
          font-family: nunito, sans-serif;
 
-         @include mobile {
-            margin-left: 100px;
+         @include Tab {
+           margin-top: 260px;
+        }
+
+        @include mobile {
+            display: none;
         }
         
 
@@ -31,7 +35,7 @@
         justify-content: space-between;
         font-family: nunito, sans-serif;
 
-        @include mobile {
+        @include Tab {
             margin-left: 40px;
         }
       
@@ -48,6 +52,11 @@
             flex-direction: column;
             margin-bottom: 15px;
             font-family: nunito, sans-serif;
+
+            @include Tab {
+                width: 200px;
+                height: 130px;
+            }
     
             .icon {
                 background-color: #{$mediumgray};
@@ -56,6 +65,11 @@
                 height: 30px;
                 padding: 10px;
                 border-radius: 50%;
+
+                @include Tab {
+                    width: 25px;
+                    height: 25px;
+                }
             }
     
            h3 {
@@ -65,6 +79,10 @@
               font-size: 20px;
               color: #{$textcolor};
               font-family: nunito, sans-serif;
+
+              @include Tab {
+                font-size: 16px;
+              }
               
             }
             span {
@@ -88,9 +106,13 @@
         align-items: center;
         flex-direction: column;
 
-        @include mobile {
+        @include Tab {
             font-size: 12px;
-            padding: 250px 85px;
+           // padding: 250px 85px;
+        }
+
+        @include mobile {
+            margin-left: 60px;
         }
         
         h1 {
@@ -115,24 +137,28 @@
              width: 50vw;
              font-family: nunito, sans-serif;
     
-            button {
-                width: 200px;
-                height: 50px;
-                padding: 10px;
-                border-radius: 5px;
-                cursor: pointer;
-                border: none;
-                font-size: 18px;
-                font-weight: bold;
-                color: #{$textcolor};
-                font-family: nunito, sans-serif;
+             
 
-                @include mobile {
-                    width: 100px;
-                    height: 30px;
-                    font-size: 12px;
-                }
-            }
+                 .button {
+                     width: 200px;
+                     height: 50px;
+                     padding: 10px;
+                     border-radius: 5px;
+                     cursor: pointer;
+                     border: none;
+                     font-size: 18px;
+                     font-weight: bold;
+                    color: #{$lightgray};
+                     background-color: 'black';
+                     font-family: nunito, sans-serif;
+     
+                     @include Tab {
+                         width: 100px;
+                         height: 30px;
+                         font-size: 12px;
+                     }
+                 }
+             
     }
     }
     

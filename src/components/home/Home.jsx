@@ -58,8 +58,8 @@ const Home = () => {
         <Canvas>
           <OrbitControls enableZoom={false} autoRotate={true}/>
           <ambientLight intensity={1}/>
-          <directionalLight position={[4,3,2]}/>
-          <Sphere args={[1,100,200]} scale={2.2}>
+          <directionalLight position={[1,3,2,1]}/>
+          <Sphere args={[1,100,200]} scale={1.4}>
             <MeshDistortMaterial
             color= "#394867"
             attach="material"
