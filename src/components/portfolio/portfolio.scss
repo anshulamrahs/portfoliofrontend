@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: 40px;
+    padding-top: 80px;
     //overflow: hidden;
     padding-bottom: 50px;
     font-family: nunito, sans-serif;
@@ -25,7 +25,7 @@
     .content {
         color: #{$textcolor};
         display: flex;
-        margin-right: 250px;
+       // margin-right: 250px;
         flex-direction: column;
         font-family: nunito, sans-serif;
 
@@ -72,7 +72,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 20px;
+        margin-top: 70px;
+        margin-bottom: 50px;
         font-family: nunito, sans-serif;
 
         @include Tab {

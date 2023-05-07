@@ -208,7 +208,7 @@
     }
     .right {
         display: flex;
-        height: 100vh;
+        height: 93vh;
         width: 40vw;
         justify-content: center;
         align-items: center;
@@ -221,8 +221,8 @@
        
 
         img {
-            width: 200px;
-            height: 200px;
+            width: 180px;
+            height: 180px;
             position: absolute;
             animation: transform 2s ease-in infinite alternate;
 

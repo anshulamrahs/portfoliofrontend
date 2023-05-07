@@ -139,7 +139,7 @@
     
              
 
-                 .button {
+                 button {
                      width: 200px;
                      height: 50px;
                      padding: 10px;
@@ -148,8 +148,8 @@
                      border: none;
                      font-size: 18px;
                      font-weight: bold;
-                    color: #{$lightgray};
-                     background-color: 'black';
+                    color: white;
+                     
                      font-family: nunito, sans-serif;
      
                      @include Tab {
