@@ -10,7 +10,7 @@ import JS from '../assets/jasd.png'
 import SASS from '../assets/sass.webp'
 import TAIL from '../assets/tail.avif'
 import Hand from '../assets/hand.jpeg'
-import CV from '../assets/resumeV.pdf'
+import CV from '../assets/anshulresume.pdf'
 import ASK from '../assets/rickg.png'
 
 
