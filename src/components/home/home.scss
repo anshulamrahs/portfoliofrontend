@@ -6,8 +6,9 @@
     background-color: #{$darkgrey};
     width: 100vw;
     height: 100vh;
-    z-index: 990;
     overflow-x: hidden;
+    
+    align-items: center;
 
     @include Tab {
         align-items: center;
@@ -17,9 +18,12 @@
     
     .left{
          display: flex;
-         flex-direction: column;
-         height: 100%;
-         width: 60vw;
+         //flex-direction: column;
+         height: 100vh;
+         width: 100vw;
+         position: absolute;
+         justify-content: space-around;
+         align-items: center;
 
          @include mobile {
             width: 100%;
@@ -29,9 +33,35 @@
          .orangename {
             color: #{$textcolor};
             font-family: nunito, sans-serif;
-            font-size: 45px;
-            margin: 200px 0 0 90px;
-            width: 50vw;
+            margin: 100px 0 0 140px;
+            width: 80vw;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            h5 {
+                font-size: 24px;
+                font-weight: 200;
+                font-family: nunito, sans-serif;
+                margin: 0px;
+            }
+
+            h1 {
+                font-size: 102px;
+                margin: 50px;
+                line-height: 92px;
+                width: 100vw;
+                display: flex;
+                justify-content: center;
+               // font-family: nunito, sans-serif;
+                color: transparent;
+                -webkit-text-stroke: 1px #fff;
+                
+            }
+
+            
             @include Tab {
                 
                 margin: 140px 0px 0px 70px;
@@ -43,18 +73,6 @@
               }
             
         }    
-        .ico {
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            padding: 10px 10px;
-
-            @include Tab {
-                width: 20px;
-                height: 20px;
-                
-             }
-        }
 
         .text {
 
@@ -82,61 +100,62 @@
 
             
          }
-
-
-        a {
-            display: flex;
-            align-items: center;
-            padding: 20px 50px;
-            text-decoration: none;
-            font-family: nunito, sans-serif;
-
-            @include Tab {
-                margin: 20px 0px;
+            a {
+                display: flex;
+                align-items: center;
                 padding: 20px 50px;
-            }
-
-            .btn {
-                background-color: #{$lightgray};
-                color: #{$textcolor};
-                padding: 15px 18px;
-                border-radius: 5px;
-                border: none;
-                font-weight: bold;
-                margin-left: 43px;
-                font-size: 14px;
-                transition: transform .3s ease-in;
+                text-decoration: none;
                 font-family: nunito, sans-serif;
-                
-                &:hover {
-                    background-color: #{$mediumgray};
-                    transform: translateY(-3px);
-                    color: rgb(0, 0, 0);
-                 }
-
+    
                 @include Tab {
-                    font-size: 14px;
-                    border: none;
+                    margin: 20px 0px;
+                    padding: 20px 50px;
+                }
+    
+                .btn {
+                    background-color:rgba(100, 100, 100, 0.2);
+                    color: #{$textcolor};
                     padding: 15px 18px;
-                    margin: 20px 30px;    
-                 }
-
-                 @include mobile {
-                    font-size: 12px;
-                    padding: 10px 20px;
-                    width: 150px;
-                 }
-
-                
+                    border-radius: 5px;
+                    border: none;
+                    font-weight: bold;
+                    margin-left: 40px;
+                    font-size: 14px;
+                    transition: transform .3s ease-in;
+                    font-family: nunito, sans-serif;
+                    
+                    &:hover {
+                        background-color: rgba(220, 220, 220, 0.2);
+                        transform: translateY(-3px);
+                        color: rgb(255, 255, 255);
+                     }
+    
+                    @include Tab {
+                        font-size: 14px;
+                        border: none;
+                        padding: 15px 18px;
+                        margin: 20px 30px;    
+                     }
+    
+                     @include mobile {
+                        font-size: 12px;
+                        padding: 10px 20px;
+                        width: 150px;
+                     }
+    
+                    
+                }
             }
-        }
+
+
 
         .skills {
             display: flex;
-            align-items: center;
-            justify-content: center;
-            
-            width: 100vw;
+           // align-items: flex-start;
+            //justify-content: flex-start;
+            transform: rotate(90deg);
+           margin-bottom: 200px;
+            width: 10vw;
 
            
 
@@ -152,10 +171,11 @@
             }
 
             p {
-                font-size: 32px;
+                font-size: 22px;
                 color: #CBE4DE;
                 margin-top: 130px;
                 font-family: nunito, sans-serif;
+                
 
                 @include Tab {
                     font-size: 22px;  
@@ -206,10 +226,12 @@
             }
         }
     }
-    .right {
+    /*.right {
         display: flex;
         height: 93vh;
         width: 40vw;
+        position: relative;
+       
         justify-content: center;
         align-items: center;
 
@@ -240,8 +262,8 @@
                 transform: translateY(30px);
             }
             
-        }
-    }
+        */
+      
     
     
 

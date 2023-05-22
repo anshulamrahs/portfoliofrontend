@@ -1,6 +1,5 @@
 import React from 'react'
 import PortItem from '../portItem/PortItem'
-import ExtensionIcon from '@mui/icons-material/Extension';
 import './portfolio.scss'
 import LiveTvIcon from '@mui/icons-material/LiveTv';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -13,9 +12,8 @@ import Admin from '../assets/admin.png'
 const Portfolio = () => {
   return (
     <div className='portfolio' id='work'>
+      <h1>Featured Work</h1>
       <div className="content">
-        <p>PORTFOLIO</p>
-        <span>Each Product is a unique piece of development<ExtensionIcon className='iccc'/></span>
       </div>
       <div className='porto'>
         <div className="pImg">
@@ -36,6 +34,7 @@ const Portfolio = () => {
         </div>
     </div>
      <PortItem
+     className="portItem"
      img={Book}
      links="https://bookingui.netlify.app"
      link="https://github.com/anshulamrahs/bookingui"
@@ -43,6 +42,7 @@ const Portfolio = () => {
      desc="This is a Personal Project made using React, Scss and Javascript. React Routing is used for Linking Different pages.The Project has dynamic components with a desktop view"
      />
      <PortItem
+     className="portItem"
      img={Admin}
      links="https://admindashbro.netlify.app"
      link="https://github.com/anshulamrahs/Adminpanel"

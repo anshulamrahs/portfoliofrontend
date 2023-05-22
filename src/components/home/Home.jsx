@@ -12,6 +12,8 @@ import TAIL from '../assets/tail.avif'
 import Hand from '../assets/hand.jpeg'
 import CV from '../assets/anshulresume.pdf'
 import ASK from '../assets/rickg.png'
+import Design from "../Design";
+
 
 
 //import Desk from '../assets/crp.jpeg'
@@ -22,26 +24,32 @@ const Home = () => {
 
   return (
     <div className='container' id="home">
+      <Design/>
       <div className="left">
-      <span className='orangename'>Hi, I'm Anshul. A Front-end Dev Based In India<img className='ico' src={Hand} alt=""/></span>
+        <div className="orangename">
+      <h5>👋  My Name is Anshul and i am a Freelance</h5>
+      <h1>Frontend Developer</h1>
       <div className="text">
-        <Typewriter
+
+      <Typewriter
         options={{autoStart: true, loop: true,
         delay: 40,
         strings:[
-          "I'm a Front-end Developer",
+          "I'm Based in India 📍",
           " A Tech Enthusiast",
           
         ]
         }}
         />
-        
       </div>
+      
       <a href={CV} download="Anshul sharma Resume" >
        <button className="btn">Download CV</button>
+       <button className="btn">@anshulamrahs</button>
       </a>
+        </div>
       <div className="skills">
-        <p>Tech Stack    |</p>
+        <p>Stack</p>
         <div className="logos">
           <ul className="ulI">
             <li><img className="lImg" src={HTML} alt="" /></li>
@@ -54,22 +62,6 @@ const Home = () => {
         </div>
       </div>
      </div>
-      <div className="right">
-        <Canvas>
-          <OrbitControls enableZoom={false} autoRotate={true}/>
-          <ambientLight intensity={1}/>
-          <directionalLight position={[1,3,2,1]}/>
-          <Sphere args={[1,100,200]} scale={1.4}>
-            <MeshDistortMaterial
-            color= "#394867"
-            attach="material"
-            distort={0.4}
-            speed={4}
-            />
-          </Sphere>
-        </Canvas>
-      <img src={ASK} alt="me"/> 
-      </div>
     </div>
   )
 }

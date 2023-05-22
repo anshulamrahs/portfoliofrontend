@@ -2,16 +2,18 @@
 
 .navbar {
   display: flex;
-  background: #222c40;
+  background: rgba(1,1,1,.6);
   color: #f1f6f9;
   width: 100vw;
   height: 70px;
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  z-index: 999;
-  border-bottom: 0.2px solid #8e96a468;
+  z-index: 1;
+  //border-bottom: 0.2px solid #8e96a468;
   overflow-x: hidden;
+  
+  
 
   @include Tab {
     width: 100%;
@@ -27,6 +29,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 
     @include Tab {
       width: 100px;
@@ -109,11 +112,11 @@
     }
 
     .click {
-        padding: 10px 25px;
+        padding: 8px 15px;
         border-radius: 5px;
         font-family: nunito, sans-serif;
         font-weight: 300;
-        background: #{$mediumgray};
+        background: rgba(100, 100, 100, 0.2);
         color: #ffffff;
         font-size: 15px;
         //border: 0.1px solid white;

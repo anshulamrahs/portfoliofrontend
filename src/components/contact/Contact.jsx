@@ -8,8 +8,8 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import SwipeDownAltIcon from '@mui/icons-material/SwipeDownAlt';
 
 
-const white = {background:'#394867'}
-const orange = {background:'#9Ba4B5', color:'black'} //to showcase using state as hover function
+const white = {background:'rgba(248, 248, 248, 0.2)'}
+const orange = {background:'rgba(220, 220, 220, 0.2)', color:'white'} //to showcase using state as hover function
 
 const Contact = () => {
   const [isHovered, setIsHovered] = useState(white)
@@ -94,8 +94,10 @@ const Contact = () => {
         </div>
       </div> 
       <div className="right">
+        <div className="tex">
         <h1>Contact</h1>
         <h3>Don't be Shy, Hit Me Up!<SwipeDownAltIcon className='iconn'/></h3>
+        </div>
       <form action="https://formsubmit.co/anshulamrahs@gmail.com" method="POST" onSubmit={handleSubmit}>
         {inputs.map((input) => (
           <Cform 

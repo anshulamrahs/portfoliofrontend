@@ -4,8 +4,9 @@ import { useState } from 'react'
 import fav from '../assets/fvg.png'
 
 
-const white = {background: '#394867'}
-const orange = {background: '#9BA4B5', color: 'black'}
+
+const white = {background: 'rgba(100, 100, 100, 0.2)',}
+const orange = {background: 'rgba(220, 220, 220, 0.2)', color: 'white'}
 
 const Navbar = () => {
 
