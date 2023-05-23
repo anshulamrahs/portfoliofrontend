@@ -1,67 +1,63 @@
 @import "../../global.scss";
 
 .footer {
-    display: flex;
-    height: 20vh;
+  display: flex;
+  height: 20vh;
+  width: 100%;
+  background-color: rgba(100, 100, 100, 0.2);
+  justify-content: space-around;
+  flex-direction: column;
+  overflow-x: hidden;
+  position: absolute;
+  align-self: flex-end;
+  margin-top: 800px;
+
+  @include mobile {
     width: 100%;
-    background-color: rgba(100, 100, 100, 0.2);
-    justify-content: space-around;
-    flex-direction: column;
-    overflow-x: hidden;
-    position: absolute;
-    align-self: flex-end;
-    margin-top: 800px;
-    
+    height: 20%;
+  }
+  .news {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    align-items: center;
+    font-family: nunito, sans-serif;
+    position: relative;
 
-    @include mobile {
-        width: 100%;
-        height: 20%;
-    }
-    .news {
-        display: flex;
-        justify-content: space-between;  
-        height: 100vh;
-        align-items: center;
+    .name {
+      h2 {
+        color: #{$textcolor};
+        padding-left: 30px;
+        font-size: 20px;
         font-family: nunito, sans-serif;
-        position: relative;
-        
-        .name {
 
-            h2 {
-                color: #{$textcolor};
-                padding-left: 30px;
-                font-size: 20px;
-                font-family: nunito, sans-serif;
-
-                @include mobile {
-                   font-size: 16px;
-                   padding: 10px;
-                }
-                
-            }
-
+        @include mobile {
+          font-size: 16px;
+          padding: 10px;
         }
-        .icons {
-            display: flex;
-            justify-content: space-around;
-
-            @include Tab {
-                margin-right: 50px;
-            }
-            
-            .icon {
-                background-color: rgba(248, 248, 248, 0.2);
-                color: rgb(255, 255, 255);
-                width: 20px;
-                height: 20px;
-                padding: 10px;
-                border-radius: 50%;
-                margin: 0px 10px;
-
-                @include Tab {
-                    margin: 0px 20px;
-                }
-            }
-        }
+      }
     }
+    .icons {
+      display: flex;
+      justify-content: space-around;
+
+      @include Tab {
+        margin-right: 50px;
+      }
+
+      .icon {
+        background-color: rgba(248, 248, 248, 0.2);
+        color: rgb(255, 255, 255);
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+        border-radius: 50%;
+        margin: 0px 10px;
+
+        @include Tab {
+          margin: 0px 20px;
+        }
+      }
+    }
+  }
 }

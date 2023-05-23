@@ -1,7 +1,7 @@
 
 import "./home.scss"
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls,Sphere, MeshDistortMaterial, } from '@react-three/drei';
+//import { Canvas } from '@react-three/fiber';
+//import { OrbitControls,Sphere, MeshDistortMaterial, } from '@react-three/drei';
 import Typewriter from 'typewriter-effect';
 import HTML from '../assets/html.svg'
 import CSS from '../assets/css.png'
@@ -9,9 +9,9 @@ import Reac from '../assets/reacts.svg'
 import JS from '../assets/jasd.png'
 import SASS from '../assets/sass.webp'
 import TAIL from '../assets/tail.avif'
-import Hand from '../assets/hand.jpeg'
+//import Hand from '../assets/hand.jpeg'
 import CV from '../assets/anshulresume.pdf'
-import ASK from '../assets/rickg.png'
+//import ASK from '../assets/rickg.png'
 import Design from "../Design";
 
 
@@ -45,9 +45,9 @@ const Home = () => {
       
       <a href={CV} download="Anshul sharma Resume" >
        <button className="btn">Download CV</button>
-       <a href = "mailto: anshulamrahs@gmail.com">
-       <button className="btn">@anshulamrahs</button>
-       </a>
+       {/*<a href = "mailto: anshulamrahs@gmail.com">
+       <button className="btns">@anshulamrahs</button>
+      </a>*/}
       </a>
         </div>
       <div className="skills">

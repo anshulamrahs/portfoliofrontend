@@ -1,269 +1,269 @@
-@import '../../global.scss';
-
+@import "../../global.scss";
 
 .container {
+  display: flex;
+  background-color: #{$darkgrey};
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  align-items: center;
+
+  @include Tab {
+    width: 100%;
+  }
+
+  @include mobile {
     display: flex;
-    background-color: #{$darkgrey};
-    width: 100vw;
+    justify-content: center;
+  }
+
+  .left {
+    display: flex;
     height: 100vh;
-    overflow-x: hidden;
-    
+    width: 100%;
+    position: absolute;
+    justify-content: space-around;
     align-items: center;
 
+    @include mobile {
+      width: 100%;
+    }
     @include Tab {
-        
+      margin-left: 400px;
+    }
+
+    .orangename {
+      color: #{$textcolor};
+      font-family: nunito, sans-serif;
+      margin: 100px 0 0 140px;
+      width: 80vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      @include Tab {
+       margin: 0px;
+       width: 100%;
+      }
+
+      @include mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h5 {
+        font-size: 24px;
+        font-weight: 200;
+        font-family: nunito, sans-serif;
+        margin: 0px;
+        @include Tab {
+          margin-right: 200px;
+          margin-left: -150px;
+        }
+
+        @include mobile {
+          margin: 0px 0px 0px 0px;
+          font-size: 18px;
+        }
+      }
+
+      h1 {
+        font-size: 102px;
+        margin: 50px;
+        line-height: 92px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        color: transparent;
+        -webkit-text-stroke: 1px #fff;
+
+        @include mobile {
+          font-size: 60px;
+          display: flex;
+          //padding-left: 50px;
+        }
+
+        @include Tab {
+          margin: 50px;
+          margin-right: 170px;
+        }
+      }
+    }
+
+    .text {
+      font-size: 32px;
+      color: #{$textcolor};
+      padding: 50px;
+      margin-left: 43px;
+      font-family: nunito, sans-serif;
+
+      @include Tab {
+        margin-left: -500px;
+      }
+
+      @include mobile {
+        font-size: 18px;
+        align-self: flex-end;
+        width: 100%;
+        margin-right: -60px;
+      }
+    }
+  }
+  a {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-family: nunito, sans-serif;
+
+    @include Tab {
+      margin-right: 180px;
     }
 
     @include mobile {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      margin-left: 50px;
+    }
+
+    .btns {
+      background-color: rgba(100, 100, 100, 0.2);
+      color: #{$textcolor};
+      padding: 15px 18px;
+      border-radius: 5px;
+      border: none;
+      font-weight: bold;
+      margin-left: 40px;
+      font-size: 14px;
+      transition: transform 0.3s ease-in;
+      font-family: nunito, sans-serif;
+
+      &:hover {
+        background-color: rgba(220, 220, 220, 0.2);
+        transform: translateY(-3px);
+        color: rgb(255, 255, 255);
+      }
+      @include Tab {
+        font-size: 14px;
+        border: none;
+        padding: 20px 50px;
+      }
+      @include mobile {
+        font-size: 12px;
+        //margin-left: 95px;
+        padding: 15px 25px;
+       // margin-right: 20px;
+       width: 76%;
+      }
+    }
+
+    .btn {
+      background-color: rgba(100, 100, 100, 0.2);
+      color: #{$textcolor};
+      padding: 15px 18px;
+      border-radius: 5px;
+      border: none;
+      font-weight: bold;
+      margin-left: 40px;
+      font-size: 14px;
+      transition: transform 0.3s ease-in;
+      font-family: nunito, sans-serif;
+
+      &:hover {
+        background-color: rgba(220, 220, 220, 0.2);
+        transform: translateY(-3px);
+        color: rgb(255, 255, 255);
+      }
+
+      @include Tab {
+        font-size: 14px;
+        border: none;
+        //padding: 20px 50px;
+      }
+
+      @include mobile {
+        font-size: 12px;
+        padding: 15px 10px;
+        margin-left: 70px;
+      }
+    }
+  }
+
+  .skills {
+    display: flex;
+    transform: rotate(90deg);
+    margin-bottom: 200px;
+    width: 10vw;
+
+    @include Tab {
+      margin: 0px 50px;
+      width: 100%;
+    }
+
+    @include mobile {
+      width: 80vw;
+    }
+
+    p {
+      font-size: 22px;
+      color: #cbe4de;
+      margin-top: 130px;
+      font-family: nunito, sans-serif;
+
+      @include Tab {
+        font-size: 22px;
+        width: 15vw;
+      }
+
+      @include mobile {
+        font-size: 10px;
+      }
+
+      @include mobile {
+        font-size: 17px;
+        margin-bottom: 40px;
+      }
+    }
+
+    .logos {
+      display: flex;
+
+      .ulI {
         display: flex;
-        justify-content: center;
-       // align-items: center;
-    }
-  
-    
-    
-    .left{
-         display: flex;
-         //flex-direction: column;
-         height: 100vh;
-         width: 100vw;
-         position: absolute;
-         justify-content: space-around;
-         align-items: center;
+        list-style: none;
+        gap: 10px;
+      }
+      .lImg {
+        width: 50px;
+        height: 50px;
+        background-color: #000000;
+        border-radius: 50px;
+        transition: transform 0.3s ease-in;
+        margin-top: 100px;
 
-         @include mobile {
-            width: 100%;
-            
-         }
-         @include Tab {
-            margin-left: 400px;
-         }
-        
-
-         .orangename {
-            color: #{$textcolor};
-            font-family: nunito, sans-serif;
-            margin: 100px 0 0 140px;
-            width: 80vw;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-
-            @include Tab {
-                margin-right: 50px;
-            }
-
-            @include mobile {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                
-                
-            }
-
-            
-
-            h5 {
-                font-size: 24px;
-                font-weight: 200;
-                font-family: nunito, sans-serif;
-                margin: 0px;
-                @include Tab {
-                margin-right: 200px;
-                margin-left: -150px;
-                 }
-
-                 @include mobile {
-                    margin: 0px 0px 0px 0px;
-                    font-size: 18px;
-                 }
-            }
-
-            h1 {
-                font-size: 102px;
-                margin: 50px;
-                line-height: 92px;
-                width: 100vw;
-                display: flex;
-                justify-content: center;
-               // font-family: nunito, sans-serif;
-                color: transparent;
-                -webkit-text-stroke: 1px #fff;
-                
-                @include mobile {
-                   font-size: 60px;
-                   display: flex;
-                   padding-left: 50px;
-                  
-                 }
-            }
-
-            
-
-            
-        }    
-
-        .text {
-
-            //display: flex;
-            font-size: 32px;
-            color: #{$textcolor};
-            padding: 50px;
-            margin-left: 43px;
-            font-family: nunito, sans-serif;
-
-            @include Tab {
-                margin-left: -500px;
-               }
-
-               @include mobile {
-                font-size: 18px;
-                align-self: flex-end;
-                width: 100%;
-                margin-right: -40px;
-              }
-
+        &:hover {
+          transform: translateY(-8px);
         }
 
-        
-
-            
-         }
-            a {
-                display: flex;
-                align-items: center;
-                padding: 10px 10px;
-                text-decoration: none;
-                font-family: nunito, sans-serif;
-    
-                @include Tab {
-                   margin-right: 180px;
-                }
-
-                @include mobile {
-                    display: flex;
-                    align-items: center;
-                    padding: 15px 5px;
-                    width: 100%;
-                    margin-left: 0px;
-                }
-    
-                .btn {
-                    background-color:rgba(100, 100, 100, 0.2);
-                    color: #{$textcolor};
-                    padding: 15px 18px;
-                    border-radius: 5px;
-                    border: none;
-                    font-weight: bold;
-                    margin-left: 40px;
-                    font-size: 14px;
-                    transition: transform .3s ease-in;
-                    font-family: nunito, sans-serif;
-                    
-                    &:hover {
-                        background-color: rgba(220, 220, 220, 0.2);
-                        transform: translateY(-3px);
-                        color: rgb(255, 255, 255);
-                     }
-    
-                    @include Tab {
-                        font-size: 14px;
-                        border: none;
-                        padding: 20px 50px;
-                     }
-    
-                     @include mobile {
-                        font-size: 12px;
-                        //margin-right: 10px;
-                        margin-left: 75px;
-                        padding: 10px 15px;
-                     }
-    
-                    
-                }
-            }
-
-
-
-        .skills {
-            display: flex;
-           // align-items: flex-start;
-            //justify-content: flex-start;
-            transform: rotate(90deg);
-           margin-bottom: 200px;
-            width: 10vw;
-
-           
-
-            @include Tab {
-                margin: 0px 50px;
-                width: 100vw;
-            }
-
-            @include mobile {
-                width: 80vw;
-                
-
-            }
-
-            p {
-                font-size: 22px;
-                color: #CBE4DE;
-                margin-top: 130px;
-                font-family: nunito, sans-serif;
-                
-
-                @include Tab {
-                    font-size: 22px;  
-                    width: 15vw;
-                }
-
-                @include mobile {
-                    font-size: 10px;
-                }
-
-                @include mobile {
-                    font-size: 17px;
-                    margin-bottom: 40px;
-                }
-            }
-
-            .logos {
-                display: flex;
-               
-
-                .ulI {
-                    display: flex;
-                    list-style: none;
-                    gap: 10px;
-                }
-                .lImg {
-                    width: 50px;
-                    height: 50px;
-                    background-color: #000000;
-                    border-radius: 50px;
-                    transition: transform .3s ease-in;
-                    margin-top: 100px;
-
-                    &:hover {
-                        transform: translateY(-8px);
-                    }
-
-                    @include Tab {
-                        width: 50px;
-                        height: 50px;
-                    }
-
-                    @include mobile {
-                        width: 30px;
-                        height: 30px;
-                    }
-                }
-            }
+        @include Tab {
+          width: 50px;
+          height: 50px;
         }
+
+        @include mobile {
+          width: 30px;
+          height: 30px;
+        }
+      }
     }
-    /*.right {
+  }
+}
+
+// CSS styles for three js model container
+/*.right {
         display: flex;
         height: 93vh;
         width: 40vw;
@@ -300,8 +300,3 @@
             }
             
         */
-      
-    
-    
-
-

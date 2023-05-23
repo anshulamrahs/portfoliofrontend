@@ -6,9 +6,6 @@ import { loadFull } from "tsparticles";
 const Design = () => {
      const particlesInit = useCallback(async engine => {
         console.log(engine);
-        // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-        // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-        // starting from v2 you can add only the features you need reducing the bundle size
         await loadFull(engine);
     }, []);
     const particlesLoaded = useCallback(async container => {
@@ -34,10 +31,11 @@ const Design = () => {
                         onClick: {
                             enable: true,
                             mode: "push",
+                            //mode: "grab",
                         },
                         onHover: {
                             enable: true,
-                            mode: "repulse",
+                            mode: "grab",
                         },
                         resize: true,
                     },
@@ -49,6 +47,12 @@ const Design = () => {
                             distance: 200,
                             duration: 0.2,
                         },
+                        grab: {
+                            distance: 150,
+                            link_linked: {
+                                opacity: 0.1,
+                            },
+                        }
                     },
                 },
                 particles: {

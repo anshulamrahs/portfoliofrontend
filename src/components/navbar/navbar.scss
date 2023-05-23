@@ -2,18 +2,15 @@
 
 .navbar {
   display: flex;
-  background: rgba(1,1,1,.6);
+  background: rgba(1, 1, 1, 0.6);
   color: #f1f6f9;
-  width: 100vw;
+  width: 100%;
   height: 70px;
   justify-content: space-between;
   align-items: center;
   position: fixed;
   z-index: 1;
-  //border-bottom: 0.2px solid #8e96a468;
   overflow-x: hidden;
-  
-  
 
   @include Tab {
     width: 100%;
@@ -21,7 +18,6 @@
   @include mobile {
     width: 100%;
   }
-  
 
   .left {
     margin-left: 80px;
@@ -29,11 +25,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
 
     @include Tab {
       width: 100px;
-      
     }
 
     @include mobile {
@@ -50,7 +44,6 @@
 
       @include Tab {
         font-size: 22px;
-        
       }
 
       .ikm {
@@ -83,7 +76,6 @@
     a {
       text-decoration: none;
       font-family: nunito, sans-serif;
-
     }
 
     .link {
@@ -112,22 +104,22 @@
     }
 
     .click {
-        padding: 8px 15px;
-        border-radius: 5px;
-        font-family: nunito, sans-serif;
-        font-weight: 300;
-        background: rgba(100, 100, 100, 0.2);
-        color: #ffffff;
-        font-size: 15px;
-        //border: 0.1px solid white;
-        border: none;
-        font-weight: 500;
+      padding: 8px 15px;
+      border-radius: 5px;
+      font-family: nunito, sans-serif;
+      font-weight: 300;
+      background: rgba(100, 100, 100, 0.2);
+      color: #ffffff;
+      font-size: 15px;
+      //border: 0.1px solid white;
+      border: none;
+      font-weight: 500;
 
-        @include Tab {
-          padding: 5px 10px;
-          width: 80px;
-          font-size: 12px;
+      @include Tab {
+        padding: 5px 10px;
+        width: 80px;
+        font-size: 12px;
       }
-      }
+    }
   }
 }

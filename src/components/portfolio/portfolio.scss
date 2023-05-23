@@ -1,334 +1,300 @@
 @import "../../global.scss";
 
 .portfolio {
-    width: 100%;
+  width: 100%;
+  height: auto;
+  background-color: rgba(100, 100, 100, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  font-family: nunito, sans-serif;
+  overflow-x: hidden;
+
+  @include Tab {
     height: auto;
-    background-color: rgba(100, 100, 100, 0.2) ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding-top: 80px;
-    //overflow: hidden;
     padding-bottom: 50px;
+  }
+
+  h1 {
+    color: white;
+    font-size: 42px;
+    position: relative;
     font-family: nunito, sans-serif;
-    overflow-x: hidden;
-    
+  }
+
+  .content {
+    color: #{$textcolor};
+    display: flex;
+    flex-direction: column;
+    font-family: nunito, sans-serif;
+    position: absolute;
 
     @include Tab {
-        height: auto;
-        padding-bottom: 50px;
+      margin-right: 0px;
+      height: 30px;
     }
 
-
-    h1 {
-        color: white;
-        font-size: 42px;
-        position: relative;
-        font-family: nunito, sans-serif;
+    @include mobile {
+      width: 340px;
     }
 
-    .content {
-        color: #{$textcolor};
-        display: flex;
-       // margin-right: 250px;
-        flex-direction: column;
-        font-family: nunito, sans-serif;
-        position: absolute;
+    p {
+      font-size: 32px;
+      position: relative;
 
-        @include Tab {
-            margin-right: 0px;
-            height: 30px;
-        }
-
-        @include mobile {
-            width: 340px;
-        }
-
-        p {
-            font-size: 32px;
-            position: relative;
-
-            @include Tab {
-                font-size: 22px;
-            }
-            
-        }
-
-        span {
-            display: flex;
-            font-size: 16px;
-            align-items: center;
-            font-family: nunito, sans-serif;
-
-            @include Tab {
-                font-size: 16px;
-            }
-
-            .iccc {
-                margin-left: 10px;
-                color: greenyellow;
-            }
-        }
-
+      @include Tab {
+        font-size: 22px;
+      }
     }
-    .porto {
-        width: 1000px;
-        height: 440px;
-        display: flex;
-        background-color: rgba(190, 189, 189, 0.2);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 70px;
-        margin-bottom: 50px;
-        font-family: nunito, sans-serif;
-        position: relative;
 
-        @include Tab {
-            height: 300px;
-            width: calc(100% - 30vw);
-            margin-top: 20px;
-            display: flex;
-            justify-content: center;
-           
-            
-        }
+    span {
+      display: flex;
+      font-size: 16px;
+      align-items: center;
+      font-family: nunito, sans-serif;
 
-        @include mobile {
-            height: 200px;
-            width: 340px;
-        }
-    
-        .pImg {
-    width: 500px;
-    height: 350px;
-    background-color:rgba(190, 189, 189, 0.2);
-    margin: 50px 40px;
-    border-radius: 5px;
-    overflow: hidden;
+      @include Tab {
+        font-size: 16px;
+      }
+
+      .iccc {
+        margin-left: 10px;
+        color: greenyellow;
+      }
+    }
+  }
+  .porto {
+    width: 1000px;
+    height: 440px;
+    display: flex;
+    background-color: rgba(190, 189, 189, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    font-family: nunito, sans-serif;
+    position: relative;
 
     @include Tab {
+      height: 300px;
+      width: calc(100% - 30vw);
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    @include mobile {
+      height: 200px;
+      width: 340px;
+    }
+
+    .pImg {
+      width: 500px;
+      height: 350px;
+      background-color: rgba(190, 189, 189, 0.2);
+      margin: 50px 40px;
+      border-radius: 5px;
+      overflow: hidden;
+
+      @include Tab {
         width: 500px;
         height: 180px;
         overflow: hidden;
-    }
-    @include mobile {
+      }
+      @include mobile {
         height: 160px;
         width: 300px;
         margin: 0px 10px;
-    }
+      }
 
-    
-    
-    
-    
-    img {
+      img {
         width: 100%;
         height: auto;
         border-radius: 5px;
         border: none;
         position: relative;
         opacity: 0.8;
-       // transform: translateY(0%);
-        
-       @include Tab {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-    @include mobile {
-        height: 150px;
-        width: 170px;
-       margin-top: 20px;
-    }
-
-    }
-    img:hover {
-    animation: mymove 3s ease-in-out;
-    }
-    
-    @keyframes mymove {
-        from {top: -120px;}
-        to {top: 0px;}
-      }
+        @include Tab {
+          width: 100%;
+          height: auto;
+          position: relative;
         }
-    
-        .pText {
-            width: 300px;
-    height: 350px;
-    background-color: rgba(190, 189, 189, 0);
-    //margin: 50px 40px;
-    border-radius: 5px;
-    padding: 40px 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: nunito, sans-serif;
+        @include mobile {
+          height: 150px;
+          width: 170px;
+          margin-top: 20px;
+        }
+      }
+      img:hover {
+        animation: mymove 3s ease-in-out;
+      }
 
-    @include Tab {
+      @keyframes mymove {
+        from {
+          top: -120px;
+        }
+        to {
+          top: 0px;
+        }
+      }
+    }
+
+    .pText {
+      width: 300px;
+      height: 350px;
+      background-color: rgba(190, 189, 189, 0);
+      //margin: 50px 40px;
+      border-radius: 5px;
+      padding: 40px 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: nunito, sans-serif;
+
+      @include Tab {
         width: 200px;
         height: 250px;
         padding: 20px 30px;
         display: flex;
         justify-content: center;
         align-items: center;
-        
-        
-        
-    }
-    @include mobile {
+      }
+      @include mobile {
         height: 150px;
         width: 90px;
         border-radius: 20px;
-    }
+      }
 
-            h2{
-                
-                color: #{$textcolor};
-                font-family: nunito, sans-serif;
-                
-                @include Tab {
-                    font-size: 12px;
-                    width: 200px;
-                    margin-left: 100px;
-                }
-                @include mobile {
-                    font-size: 12px;
-                }
-            
-                
-    
-                .icon {
-                    margin-left: 5px;
-                    margin-top: 3px;
-                    color: #{$textcolor};
-                    @include Tab {
-                        width: 15px;
-                        height: 15px;
-                    }
-                }
+      h2 {
+        color: #{$textcolor};
+        font-family: nunito, sans-serif;
 
-            }
-            .pTex{
-                color: #{$textcolor};
-                font-family: nunito, sans-serif;
-
-                @include Tab {
-                    font-size: 12px;
-                }
-
-                @include mobile {
-                    display: none;
-                }
-             
-                
-            }
-    
-            .stack {
-                display: flex;
-                color: #{$textcolor};
-                width: 300px;
-                justify-content: center;
-                align-items: center;
-                gap: 20px;
-                font-family: nunito, sans-serif;
-                
-                
-                
-                
-                
-    
-                p{
-                   //margin-left: 5px;
-                   background-color: rgba(190, 189, 189, 0.2);
-                   padding: 6px 15px;
-                   border-radius: 5px;
-                   font-size: 18px;
-                   transition: transform .3s ease-in;
-                   font-family: nunito, sans-serif;
-
-                   @include Tab {
-                    font-size: 12px;
-                    padding: 6px 15px;
-                }
-
-                @include mobile {
-                    font-size: 12px;
-                    padding: 3px 8px;
-                }
-
-                &:hover {
-                    transform: translateY(-3px);
-
-                }
-                  
-                }
-            }
-    
-            .links {
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-
-                @include Tab {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 10px;
-                    margin-left: 0px;
-                }
-                @include mobile {
-                    font-size: 8px;
-                    padding: 3px 8px;
-                }
-               
-                
-                
-    
-                a {
-                    background-color: rgba(190, 189, 189, 0.2);
-                    padding: 6px 15px;
-                    font-size: 18px;
-                    font-weight: bold;
-                    text-decoration: none;
-                    color: #{$textcolor};
-                    margin-right: 10px;
-                    border-radius: 5px;
-                    transition: transform .3s ease-in;
-
-                    @include Tab {
-                        font-size: 10px;
-                        padding: 3px 30px;
-                        border-radius: 5px;
-                        margin-left: 10px;
-                    }
-                    @include mobile {
-                        font-size: 8px;
-                        padding: 3px 8px;
-                    }
-                    &:hover {
-                        transform: translateY(-3px);
-    
-                    }
-    
-                    .ico {
-                        margin-left: 5px;
-                        width: 16px;
-                        height: 16px;
-
-                        @include Tab {
-                            width: 10px;
-                            height: 10px;
-                        }
-                    }
-                }
-            }
+        @include Tab {
+          font-size: 12px;
+          width: 200px;
+          margin-left: 100px;
         }
-    }
+        @include mobile {
+          font-size: 12px;
+        }
 
-   
+        .icon {
+          margin-left: 5px;
+          margin-top: 3px;
+          color: #{$textcolor};
+          @include Tab {
+            width: 15px;
+            height: 15px;
+          }
+        }
+      }
+      .pTex {
+        color: #{$textcolor};
+        font-family: nunito, sans-serif;
+
+        @include Tab {
+          font-size: 12px;
+        }
+
+        @include mobile {
+          display: none;
+        }
+      }
+
+      .stack {
+        display: flex;
+        color: #{$textcolor};
+        width: 300px;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        font-family: nunito, sans-serif;
+
+        p {
+          background-color: rgba(190, 189, 189, 0.2);
+          padding: 6px 15px;
+          border-radius: 5px;
+          font-size: 18px;
+          transition: transform 0.3s ease-in;
+          font-family: nunito, sans-serif;
+
+          @include Tab {
+            font-size: 12px;
+            padding: 6px 15px;
+          }
+
+          @include mobile {
+            font-size: 12px;
+            padding: 3px 8px;
+          }
+
+          &:hover {
+            transform: translateY(-3px);
+          }
+        }
+      }
+
+      .links {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        @include Tab {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          margin-left: 0px;
+        }
+        @include mobile {
+          font-size: 8px;
+          padding: 3px 8px;
+        }
+
+        a {
+          background-color: rgba(190, 189, 189, 0.2);
+          padding: 6px 15px;
+          font-size: 18px;
+          font-weight: bold;
+          text-decoration: none;
+          color: #{$textcolor};
+          margin-right: 10px;
+          border-radius: 5px;
+          transition: transform 0.3s ease-in;
+
+          @include Tab {
+            font-size: 10px;
+            padding: 3px 30px;
+            border-radius: 5px;
+            margin-left: 10px;
+          }
+          @include mobile {
+            font-size: 8px;
+            padding: 3px 8px;
+          }
+          &:hover {
+            transform: translateY(-3px);
+          }
+
+          .ico {
+            margin-left: 5px;
+            width: 16px;
+            height: 16px;
+
+            @include Tab {
+              width: 10px;
+              height: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
