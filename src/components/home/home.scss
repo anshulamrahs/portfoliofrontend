@@ -76,7 +76,6 @@
 
                  @include mobile {
                     margin: 0px 0px 0px 0px;
-                    margin-left: -28px;
                     font-size: 18px;
                  }
             }
@@ -95,6 +94,7 @@
                 @include mobile {
                    font-size: 60px;
                    display: flex;
+                   padding-left: 50px;
                   
                  }
             }
@@ -121,7 +121,7 @@
                 font-size: 18px;
                 align-self: flex-end;
                 width: 100%;
-                margin-right: -20px;
+                margin-right: -40px;
               }
 
         }
@@ -175,9 +175,9 @@
     
                      @include mobile {
                         font-size: 12px;
-                        margin-right: 10px;
-                        margin-left: 35px;
-                        padding: 20px 35px;
+                        //margin-right: 10px;
+                        margin-left: 75px;
+                        padding: 10px 15px;
                      }
     
                     
