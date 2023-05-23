@@ -45,7 +45,9 @@ const Home = () => {
       
       <a href={CV} download="Anshul sharma Resume" >
        <button className="btn">Download CV</button>
+       <a href = "mailto: anshulamrahs@gmail.com">
        <button className="btn">@anshulamrahs</button>
+       </a>
       </a>
         </div>
       <div className="skills">

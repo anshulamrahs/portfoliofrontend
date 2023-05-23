@@ -6,7 +6,8 @@
     background-color: #{$darkgrey};
     display: flex;
     color: white;
-  justify-content: space-between;
+  justify-content: center;
+  
  
    flex-direction: column;
     
@@ -39,6 +40,8 @@
             width: 500px;
             height: 350px;
             margin-left: 50px;
+            object-fit: cover;
+            
             @include Tab {
             width: 500px;
             height: 350px; 
@@ -58,6 +61,7 @@
             width: 70px;
             height: 70px;
             z-index: 2;
+            
 
             @include Tab {
             position: absolute;
@@ -83,7 +87,7 @@
             .per {
                 width: 160px;
                 height: 160px;
-                background-color: rgb(255, 255, 255);
+                background-color: rgba(100, 100, 100, 0.9);
                 margin: 240px 0px 0px 220px ;
                 border-radius: 50%;
                 animation: rotation 6s infinite linear;

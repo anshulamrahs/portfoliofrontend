@@ -2,7 +2,7 @@ import React from 'react'
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import './about.scss'
 
-import Anshul from '../assets/crop.jpeg'
+import Anshul from '../assets/anshus.JPG'
 import Male from '../assets/male.png'
 import Tex from '../assets/ftex.png'
 const Project = () => {

@@ -11,7 +11,13 @@
     align-items: center;
 
     @include Tab {
-        align-items: center;
+        
+    }
+
+    @include mobile {
+        display: flex;
+        justify-content: center;
+       // align-items: center;
     }
   
     
@@ -27,6 +33,10 @@
 
          @include mobile {
             width: 100%;
+            
+         }
+         @include Tab {
+            margin-left: 400px;
          }
         
 
@@ -35,17 +45,40 @@
             font-family: nunito, sans-serif;
             margin: 100px 0 0 140px;
             width: 80vw;
-
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
+
+            @include Tab {
+                margin-right: 50px;
+            }
+
+            @include mobile {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                
+            }
+
+            
 
             h5 {
                 font-size: 24px;
                 font-weight: 200;
                 font-family: nunito, sans-serif;
                 margin: 0px;
+                @include Tab {
+                margin-right: 200px;
+                margin-left: -150px;
+                 }
+
+                 @include mobile {
+                    margin: 0px 0px 0px 0px;
+                    margin-left: -28px;
+                    font-size: 18px;
+                 }
             }
 
             h1 {
@@ -59,18 +92,15 @@
                 color: transparent;
                 -webkit-text-stroke: 1px #fff;
                 
+                @include mobile {
+                   font-size: 60px;
+                   display: flex;
+                  
+                 }
             }
 
             
-            @include Tab {
-                
-                margin: 140px 0px 0px 70px;
-                
-             }
 
-             @include mobile {
-                font-size: 30px;
-              }
             
         }    
 
@@ -84,14 +114,14 @@
             font-family: nunito, sans-serif;
 
             @include Tab {
-                
-                padding: 20px 30px ;
-                  
+                margin-left: -500px;
                }
 
                @include mobile {
                 font-size: 18px;
-                width: 100vw;
+                align-self: flex-end;
+                width: 100%;
+                margin-right: -20px;
               }
 
         }
@@ -103,13 +133,20 @@
             a {
                 display: flex;
                 align-items: center;
-                padding: 20px 50px;
+                padding: 10px 10px;
                 text-decoration: none;
                 font-family: nunito, sans-serif;
     
                 @include Tab {
-                    margin: 20px 0px;
-                    padding: 20px 50px;
+                   margin-right: 180px;
+                }
+
+                @include mobile {
+                    display: flex;
+                    align-items: center;
+                    padding: 15px 5px;
+                    width: 100%;
+                    margin-left: 0px;
                 }
     
                 .btn {
@@ -133,14 +170,14 @@
                     @include Tab {
                         font-size: 14px;
                         border: none;
-                        padding: 15px 18px;
-                        margin: 20px 30px;    
+                        padding: 20px 50px;
                      }
     
                      @include mobile {
                         font-size: 12px;
-                        padding: 10px 20px;
-                        width: 150px;
+                        margin-right: 10px;
+                        margin-left: 35px;
+                        padding: 20px 35px;
                      }
     
                     
