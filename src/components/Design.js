@@ -30,8 +30,8 @@ const Design = () => {
                     events: {
                         onClick: {
                             enable: true,
-                            mode: "push",
-                            //mode: "grab",
+                            //mode: "push",
+                            mode: "grab",
                         },
                         onHover: {
                             enable: true,
@@ -47,10 +47,10 @@ const Design = () => {
                             distance: 200,
                             duration: 0.2,
                         },
-                        grab: {
+                         grab: {
                             distance: 150,
-                            link_linked: {
-                                opacity: 0.1,
+                           link_linked: {
+                               opacity: 0.1,
                             },
                         }
                     },

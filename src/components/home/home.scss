@@ -27,6 +27,7 @@
 
     @include mobile {
       width: 100%;
+      margin-top: 100px;
     }
     @include Tab {
       margin-left: 400px;
@@ -70,7 +71,7 @@
       }
 
       h1 {
-        font-size: 102px;
+        font-size: 112px;
         margin: 50px;
         line-height: 92px;
         width: 100%;
@@ -78,16 +79,31 @@
         justify-content: center;
         color: transparent;
         -webkit-text-stroke: 1px #fff;
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(../assets/back.png);
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-position: 0 0;
+        animation: back 20s linear infinite;
+        
+
 
         @include mobile {
           font-size: 60px;
           display: flex;
-          //padding-left: 50px;
+          margin-left: 50px;
         }
 
         @include Tab {
           margin: 50px;
-          margin-right: 170px;
+         // margin-right: 170px;
+         margin-left: 100px;
+         margin-top: 10px;
+        }
+      }
+
+      @keyframes back {
+        100% {
+          background-position: 2000px 0;
         }
       }
     }
@@ -106,8 +122,8 @@
       @include mobile {
         font-size: 18px;
         align-self: flex-end;
-        width: 100%;
-        margin-right: -60px;
+        width: 78%;
+        
       }
     }
   }
@@ -187,7 +203,7 @@
       @include mobile {
         font-size: 12px;
         padding: 15px 10px;
-        margin-left: 70px;
+        margin-left: 100px;
       }
     }
   }

@@ -23,6 +23,10 @@
     font-size: 42px;
     position: relative;
     font-family: nunito, sans-serif;
+
+    @include mobile {
+      font-size: 22px;
+    }
   }
 
   .content {
